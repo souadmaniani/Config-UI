@@ -1,0 +1,57 @@
+#testimonials {
+	h1 {
+		margin-bottom: 34px;
+	}
+	h2 {
+		margin-bottom: 55px;
+		text-align: center;
+	}
+	p {
+		margin-bottom: 26px;
+	}
+	span.auth {
+		display: inline-block;
+		float: right;
+	}
+
+	.owl-carousel {
+		.owl-item {
+			padding: 0 33px;
+		}
+		.owl-nav {
+			margin-top: 52px;
+			@include flex(space-between, center);
+			button {
+				transform: translateY(0);
+				@extend .btn;
+				min-width: 200px !important;
+				position: static !important;
+				padding: 19px !important;
+			}
+		}
+	}
+	@include for-size(lg-down) {
+		.owl-nav {
+			display: none !important;
+		}
+		.owl-carousel {
+			padding-bottom: 28px;
+			padding-top: 0;
+		}
+		h1 {
+			margin-bottom: 28px;
+		}
+		h2 {
+			margin-bottom: 12px;
+		}
+		p {
+			margin-bottom: 12px;
+		}
+		.owl-dots {
+			margin-top: 16px;
+		}
+		.owl-item {
+			padding: 0 10px !important;
+		}
+	}
+}

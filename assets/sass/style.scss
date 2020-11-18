@@ -1,0 +1,22 @@
+// 2 - Vendors;
+@import "vendors/bootstrap";
+@import "vendors/animate";
+@import "vendors/magic";
+@import "vendors/owl.carousel";
+
+// 1 - Utils
+@import "utils/variables";
+@import "utils/mixins";
+
+// 3 - Base;
+@import "base/reset";
+@import "base/typography";
+
+// 4 - Layout;
+// ......
+
+// 5 - Components;
+@import "components/buttons";
+@import "components/carousel";
+@import "components/inputs";
+

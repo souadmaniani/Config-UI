@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+	font-size: 100%; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	scroll-behavior: smooth;
+}
+
+body {
+	color: $primary-color;
+	overflow-x: hidden;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	display: block;
+}
+
+i {
+	vertical-align: middle;
+}
+
+a,
+a:visited {
+	transition: color $duration-1 $timing-1;
+	color: $primary-color;
+
+	&:not(.btn):focus {
+		outline: 0;
+		color: $primary-color;
+	}
+	&:active,
+	&:hover {
+		text-decoration: none;
+		color: $secondary-color;
+		transition: color $duration-1 $timing-1;
+	}
+}
+svg {
+	path {
+		transition: stroke $duration-1 $timing-1, fill $duration-1 $timing-1;
+	}
+	&:hover {
+		path {
+			transition: stroke $duration-1 $timing-1, fill $duration-1 $timing-1;
+		}
+	}
+}
+
+button,
+a.btn,
+input[type="submit"] {
+	cursor: pointer;
+	transition: color $duration-1 $timing-1, background $duration-1 $timing-1, border $duration-1 $timing-1;
+
+	&:focus {
+		outline: 0;
+	}
+	&:active,
+	&:hover {
+		outline: 0;
+		transition: color $duration-1 $timing-1, background $duration-1 $timing-1, border $duration-1 $timing-1;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}

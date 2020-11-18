@@ -1,0 +1,138 @@
+/*=== Import Fonts ===*/
+@include font-face($primary-regular, $primary-regular-path);
+@include font-face($primary-medium, $primary-medium-path);
+@include font-face($primary-semibold, $primary-semibold-path);
+@include font-face($primary-bold, $primary-bold-path);
+// @include font-face($secondary-regular, $secondary-regular-path);
+
+/*=== Typography Styling ===*/
+body {
+	font-family: $primary-semibold;
+	font-size: $size-1;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $primary-color;
+	font-family: $primary-semibold;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: $size-7;
+
+	&.large {
+		color: $primary-color-2;
+		font-size: $size-8;
+	}
+	@include for-size(lg-down) {
+		font-size: $size-6 !important;
+	}
+	@include for-size(md-down) {
+		font-size: $size-5 !important;
+	}
+	@include for-size(sm-down) {
+		font-size: $size-4 !important;
+	}
+}
+
+h2 {
+	color: $secondary-color;
+	font-size: $size-5;
+	@include for-size(lg-down) {
+		font-size: $size-4;
+	}
+	@include for-size(sm-down) {
+		font-size: $size-3;
+	}
+}
+
+h3 {
+	font-size: $size-4;
+	@include for-size(lg-down) {
+		font-size: $size-1;
+	}
+}
+
+h4 {
+	font-size: $size-3;
+	@include for-size(md-down) {
+		font-size: $size-2;
+	}
+}
+
+h5 {
+	font-size: $size-2;
+	@include for-size(md-down) {
+		font-size: $size-1;
+	}
+}
+
+h6 {
+	font-size: $size-1;
+	@include for-size(md-down) {
+		font-size: $size-0;
+	}
+}
+p {
+	font-family: $primary-regular;
+	font-size: $size-4;
+
+	&.large {
+		font-family: $primary-medium;
+		font-size: $size-6;
+		font-weight: 500;
+	}
+	&.small {
+		font-family: $primary-medium;
+		font-size: $size-1;
+		font-weight: 500;
+	}
+	@include for-size(lg-down) {
+		font-size: $size-3 !important;
+	}
+	@include for-size(sm-down) {
+		font-size: $size-0 !important;
+	}
+}
+
+
+textarea,
+input,
+label {
+	font-family: $primary-regular;
+	font-size: $size-0;
+}
+
+button,
+input[type="submit"],
+a.btn {
+	font-size: $size-1;
+	font-family: $primary-semibold;
+	font-weight: 600;
+
+	@include for-size(sm-down) {
+		font-size: $size-0;
+	}
+}
+
+a.nav-link {
+	font-family: $primary-medium;
+	font-size: $size-0;
+	font-weight: 500;
+}
+
+span.auth {
+	color: $primary-color;
+	font-family: $primary-bold;
+	font-size: $size-1;
+	font-weight: bold;
+}

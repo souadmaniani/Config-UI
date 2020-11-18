@@ -1,0 +1,46 @@
+// Primary Color
+$primary-color: #9ea0a5;
+$primary-color-2: #212529;
+$primary-color-3: #3a3b3f;
+$secondary-color: #66788a;
+$secondary-color-2:#1665d8;;
+
+$white-color: #ffffff;
+$black-color: #000000;
+
+// Breakpoint
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+//Font sizes
+$size-0: 14px;
+$size-1: 16px;
+$size-2: 18px;
+$size-3: 20px;
+$size-4: 24px;
+$size-5: 34px;
+$size-6: 40px;
+$size-7: 50px;
+$size-8: 80px;
+
+// Font Names
+$primary-font: "Roboto";
+// $secondary-font: "Montserrat";
+
+//Font Family
+$primary-regular: $primary-font + " Regular";
+$primary-medium: $primary-font + " Medium";
+
+// $secondary-regular: $secondary-font + " Regular";
+
+//Font Path
+$primary-regular-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
+$primary-medium-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
+
+// $secondary-regular-path: "../fonts/" + $secondary-font + "/" + $secondary-font + "-Regular.ttf";
+
+// Transition
+$duration-1: 300ms; // duration
+$timing-1: ease-in-out; //timing function

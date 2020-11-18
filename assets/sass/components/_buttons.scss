@@ -1,0 +1,38 @@
+.btn {
+	background-color: $secondary-color;
+	border: 1px solid $secondary-color;
+	color: $white-color !important;
+	border-radius: 50px;
+	padding: 19px 23px;
+	min-width: 263px;
+	line-height: 1;
+	max-height: 62px;
+	// ondulation
+	@include ripple-effect;
+
+	&.outline {
+		background-color: transparent;
+		color: $primary-color !important;
+		border-color: $primary-color;
+		font-size: $size-0;
+		min-width: 182px;
+		padding: 10px 13px;
+
+		&:hover {
+			color: $white-color !important;
+			background-color: $primary-color;
+			border-color: $primary-color;
+		}
+	}
+
+	&:hover {
+		background-color: $primary-color;
+		border-color: $primary-color;
+		color: $white-color !important;
+	}
+
+	@include for-size(sm-down) {
+		padding: 13px 18px;
+		min-width: 193px;
+	}
+}

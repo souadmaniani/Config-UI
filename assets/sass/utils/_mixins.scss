@@ -1,0 +1,85 @@
+// Media Query
+@mixin for-size($size) {
+	@if $size == sm-down {
+		@media (max-width: $breakpoint-sm) {
+			@content;
+		}
+	} @else if $size == md-down {
+		@media (max-width: $breakpoint-md) {
+			@content;
+		}
+	} @else if $size == lg-down {
+		@media (max-width: $breakpoint-lg) {
+			@content;
+		}
+	} @else if $size == lg-up {
+		@media (min-width: $breakpoint-lg) {
+			@content;
+		}
+	} @else if $size == xl-down {
+		@media (max-width: $breakpoint-xl) {
+			@content;
+		}
+	} @else if $size == xl-up {
+		@media (min-width: $breakpoint-xl) {
+			@content;
+		}
+	}
+}
+
+// Button Click Effect
+@mixin ripple-effect {
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		position: absolute;
+		background-color: $white-color;
+		padding: 50%;
+		border-radius: 50%;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 0;
+		transition: transform 600ms, opacity 600ms;
+		pointer-events: none;
+	}
+	&:active::before {
+		transition: 0s;
+		opacity: 0.5;
+		transform: translate(-50%, -50%) scale(0);
+	}
+}
+
+// Flexbox
+@mixin flex($justify, $align) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+// Placeholder Style
+@mixin input-placeholder {
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+@mixin font-face($family, $ttf-path) {
+	@font-face {
+		font-family: $family;
+		src: url($ttf-path) format("truetype");
+	}
+}
