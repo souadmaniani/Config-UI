@@ -1,0 +1,21 @@
+.container {
+	background-color: #f9fafb;
+	border: 2px solid black;
+}
+#authentification {
+	max-width: $breakpoint-lg;
+	background-color: $white-color;
+	border: 1px solid;
+	
+	h1 {
+		margin-top: 24px;
+		line-height: 1.17;
+		text-align: left;
+	}
+
+	@include for-size(lg-down) {
+		h1 {
+			margin-bottom: 28px;
+		}
+	}
+}
