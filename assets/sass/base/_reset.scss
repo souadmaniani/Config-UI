@@ -51,21 +51,20 @@ h6 {
 i {
 	vertical-align: middle;
 }
-
 a,
 a:visited {
 	transition: color $duration-1 $timing-1;
 	color: $primary-color;
 
 	&:not(.btn):focus {
-		outline: 0;
-		color: $primary-color;
+		color: $secondary-color-1 !important;
+
 	}
 	&:active,
 	&:hover {
-		text-decoration: none;
-		color: $secondary-color;
 		transition: color $duration-1 $timing-1;
+		color: $secondary-color-1 !important;
+
 	}
 }
 svg {

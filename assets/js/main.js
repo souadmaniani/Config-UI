@@ -1,4 +1,27 @@
 $(() => {
+	// ====== [BEGIN] floating-placeholder ======
+    function initTricks() {
+        var labels = $('.floating-placeholder label');
+        labels.each(function(i) {
+            var ph = $(labels[i])
+                .siblings('input')
+                .first()
+                .attr('placeholder');
+            $(labels[i]).html(ph);
+        });
+    }
+    $('.floating-placeholder input').keyup(function() {
+        var input = $(this).val(); 
+        if(input) $(this).parent().addClass('float');
+        else $(this).parent().removeClass('float');
+    });
+    $('#form').submit(function(e) {
+        e.preventDefault();
+	});
+	
+    initTricks();
+
+   // ====== [END] floating-placeholder ======
 	// ====== [BEGIN] Owl Carousel ======
 	// $('#how-it-works .owl-carousel').owlCarousel({
 	// 	nav: true,

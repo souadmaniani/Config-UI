@@ -19,46 +19,71 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-	color: $primary-color-2;
-	font-family: $primary-regular;
+h6,
+label {
 	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	text-align: left;
 }
 
 h1 {
+	font-family:$primary-medium;
 	font-size: $size-4;
+	line-height: 1.17;
+	letter-spacing: -0.06px;
 	@include for-size(lg-down) {
 	}
-	
 }
 
-h6 {
-	font-size: $size-0;
-	color: $primary-color;
-	@include for-size(md-down) {
+h2 {
+	font-family:$primary-medium;
+	font-size: $size-3;
+	line-height: 1.2;
+	letter-spacing: -0.06px;
+	@include for-size(lg-down) {
 	}
 }
-// p {
-// 	font-family: $primary-regular;
-// 	font-size: $size-4;
+h3 {
+	font-family:$primary-medium;
+	font-size: $size-2;
+	line-height: 1.11;
+	letter-spacing: -0.05px;
+	@include for-size(lg-down) {
+	}
+}
+h4 {
+	font-size: $size-1;
+	line-height: 1.25;
+  	letter-spacing: -0.05px;
+	@include for-size(lg-down) {
+	}
+}
+h5, a {
+	font-size: $size-0;
+	line-height: 1.43;
+  	letter-spacing: -0.05px;
+	@include for-size(lg-down) {
+	}
+}
+h6, label {
+	font-size: $size;
+	letter-spacing: normal;
+	@include for-size(lg-down) {
+	}
+}
 
-// 	&.large {
-// 		font-family: $primary-medium;
-// 		font-size: $size-6;
-// 		font-weight: 500;
-// 	}
-// 	&.small {
-// 		font-family: $primary-medium;
-// 		font-size: $size-1;
-// 		font-weight: 500;
-// 	}
-// 	@include for-size(lg-down) {
-// 		font-size: $size-3 !important;
-// 	}
-// 	@include for-size(sm-down) {
-// 		font-size: $size-0 !important;
-// 	}
-// }
+p {
+	font-family: $primary-regular;
+	font-size: $size-1;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.56;
+	letter-spacing: -0.06px;
+	text-align: left;
+	color: $white-color;
+}
 
 input
 {

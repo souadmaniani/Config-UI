@@ -1,21 +1,69 @@
+@import "../components/inputs";
+@import "../components/buttons";
 .container {
-	background-color: #f9fafb;
-	border: 2px solid black;
+	background-color: $primary-color-4;
+	margin-top: 158px;
 }
 #authentification {
 	max-width: $breakpoint-lg;
 	background-color: $white-color;
-	border: 1px solid;
-	
-	h1 {
-		margin-top: 24px;
-		line-height: 1.17;
-		text-align: left;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 0 0 0 rgba(63, 63, 68, 0.05);
+	.form-content {
+		margin: 55px 0px 106px;
+		padding: 0 64px 0;
 	}
-
-	@include for-size(lg-down) {
-		h1 {
-			margin-bottom: 28px;
+	h1 {
+		margin-top: 16px;
+		color: $primary-color-2;
+	}
+	h5, a {
+		color: $primary-color;
+	&.sign-up {
+			margin-bottom: 38px;
 		}
+	}
+	.image {
+		position: relative;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+			
+		}
+		div.description {
+			position: absolute;
+			padding-left: 24px;
+			bottom: 24px;
+			.img-desc {
+				display: flex;
+				flex-direction: row;
+			
+				img {
+					width: 32px;
+					height: 32px;
+					object-fit: cover;
+				}
+				.title-desc {
+					padding-left: 50px;
+					p {
+						font-size: $size-0;
+						letter-spacing: -0.04px;
+						line-height: normal;
+						margin-bottom: 2px;
+					}
+				}
+				
+			}
+			
+		}
+	}
+	
+	
+	
+	@include for-size(lg-down) {
+
 	}
 }

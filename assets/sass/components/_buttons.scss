@@ -1,38 +1,30 @@
 .btn {
-	background-color: $secondary-color;
-	border: 1px solid $secondary-color;
+	background-color: $primary-color-5;
+	border: 1px solid $primary-color-5;
 	color: $white-color !important;
-	border-radius: 50px;
-	padding: 19px 23px;
-	min-width: 263px;
-	line-height: 1;
+	padding: 12px 0px;
 	max-height: 62px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 1px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 	// ondulation
 	@include ripple-effect;
 
 	&.outline {
 		background-color: transparent;
-		color: $primary-color !important;
-		border-color: $primary-color;
-		font-size: $size-0;
-		min-width: 182px;
-		padding: 10px 13px;
-
+		color: $secondary-color-1 !important;
+		border-color: $secondary-color-1;
 		&:hover {
 			color: $white-color !important;
-			background-color: $primary-color;
-			border-color: $primary-color;
+			background-color: $secondary-color-1;
+			border-color: $secondary-color-1;
 		}
 	}
 
 	&:hover {
-		background-color: $primary-color;
-		border-color: $primary-color;
+		background-color: $secondary-color-1;
+		border-color: $secondary-color-1;
 		color: $white-color !important;
 	}
 
 	@include for-size(sm-down) {
-		padding: 13px 18px;
-		min-width: 193px;
 	}
 }
