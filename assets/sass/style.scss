@@ -1,7 +1,7 @@
 // 2 - Vendors;
 @import "vendors/bootstrap";
 @import "vendors/animate";
-// @import "vendors/magic";
+@import "vendors/magic";
 @import "vendors/owl.carousel";
 
 // 1 - Utils
@@ -14,7 +14,7 @@
 
 // 4 - Layout;
 @import "layout/authentification";
-
+@import "layout/profil";
 // 5 - Components;
 // @import "components/buttons";
 // @import "components/carousel";
