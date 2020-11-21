@@ -1,6 +1,11 @@
 // Media Query
 @mixin for-size($size) {
-	@if $size == sm-down {
+	@if $size == xs-down {
+		@media (max-width: $breakpoint-sm) {
+			@content;
+		}
+	}
+	@else if $size == sm-down {
 		@media (max-width: $breakpoint-sm) {
 			@content;
 		}

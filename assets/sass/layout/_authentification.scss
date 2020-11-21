@@ -3,35 +3,61 @@
 .container {
 	background-color: $primary-color-4;
 	margin-top: 158px;
+	@include for-size(md-down) {
+		margin-top: 15px;
+	}
+
 }
 #authentification {
 	max-width: $breakpoint-lg;
 	background-color: $white-color;
 	border-radius: 4px;
 	box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 0 0 0 rgba(63, 63, 68, 0.05);
+	@include for-size(md-down) {
+		max-width: $breakpoint-md;
+	}
 	.form-content {
 		margin: 55px 0px 106px;
 		padding: 0 64px 0;
+		@include for-size(md-down) {
+			margin: 30px 0px 50px;
+			padding: 0 30px 0;
+		}
 	}
+
 	h1 {
 		margin-top: 16px;
 		color: $primary-color-2;
+		@include for-size(md-down) {
+			margin-top: 10px;
+		}
 	}
 	h5, a {
 		color: $primary-color;
 	&.sign-up {
 			margin-bottom: 38px;
+			@include for-size(md-down) {
+				margin-bottom: 16px;
+			}
 		}
 	}
+
 	.image {
 		position: relative;
+		@include for-size(md-down) {
+			min-height: 320px;
+		}
 		img {
-			position: absolute;
+			// position: absolute;
 			width: 100%;
 			height: 100%;
 			border-top-right-radius: 4px;
 			border-bottom-right-radius: 4px;
-			
+			object-fit: cover;
+			@include for-size(md-down) {
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+			}
 		}
 		div.description {
 			position: absolute;
@@ -48,11 +74,18 @@
 				}
 				.title-desc {
 					padding-left: 50px;
+					@include for-size(md-down) {
+						padding-left: 20px;
+					}
 					p {
 						font-size: $size-0;
 						letter-spacing: -0.04px;
 						line-height: normal;
 						margin-bottom: 2px;
+						@include for-size(md-down) {
+							font-size: $size;
+							
+						}
 					}
 				}
 				
@@ -60,9 +93,7 @@
 			
 		}
 	}
-	
-	
-	
+		
 	@include for-size(lg-down) {
 
 	}

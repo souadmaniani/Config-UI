@@ -15,7 +15,7 @@ $(() => {
         if(input) $(this).parent().addClass('float');
         else $(this).parent().removeClass('float');
     });
-    $('#form').submit(function(e) {
+    $('#my-form').submit(function(e) {
         e.preventDefault();
 	});
 	

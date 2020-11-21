@@ -32,7 +32,8 @@ h1 {
 	font-size: $size-4;
 	line-height: 1.17;
 	letter-spacing: -0.06px;
-	@include for-size(lg-down) {
+	@include for-size(md-down) {
+		font-size: $size-3;
 	}
 }
 
@@ -63,13 +64,16 @@ h5, a {
 	font-size: $size-0;
 	line-height: 1.43;
   	letter-spacing: -0.05px;
-	@include for-size(lg-down) {
+	@include for-size(md-down) {
+		font-size: $size;
 	}
+
 }
 h6, label {
 	font-size: $size;
 	letter-spacing: normal;
-	@include for-size(lg-down) {
+	@include for-size(md-down) {
+	
 	}
 }
 
@@ -83,14 +87,18 @@ p {
 	letter-spacing: -0.06px;
 	text-align: left;
 	color: $white-color;
+	@include for-size(md-down) {
+		font-size: $size;
+	}
 }
 
 input
 {
 	font-family: $primary-regular;
 	font-size: $size-1;
-	color: $black-color;
-	opacity: 0.6;
+	@include for-size(md-down) {
+		font-size: $size-0;
+	}
 }
 
 button,
