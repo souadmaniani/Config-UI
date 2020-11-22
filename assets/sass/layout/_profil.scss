@@ -1,3 +1,95 @@
-#setting {
-    padding-top: 50px;
+.setting-container {
+    background-color: $primary-color-7;
+    #setting {
+        padding-top: 55px;
+       
+    }
+    #menu {
+        background-color: $white-color;
+        padding-top: 24px ;
+        padding-left: 34px;
+        padding-right: 24px;
+        .profil-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 24px ;
+            border-bottom: 1px solid $primary-color-8;
+            img {
+                padding-bottom: 16px;
+            }
+            h4 {
+                color: $primary-color-3;
+            }
+            h6 {
+                color: $primary-color;
+            }
+        }
+        nav {
+            padding-top: 24px;
+            a {
+                padding-bottom: 37px;
+                padding-left : 24px;
+            }
+            h5 {
+                display: inline;
+                padding-left: 10px;
+                color: $primary-color-6;
+            }
+            .support {
+                padding-top: 137px;
+                border-top: 1px solid $primary-color-8;
+                h6 {
+                    padding-left: 20px;
+                    color: rgba(0,0,0,0.33);
+                }
+            }
+
+        }
+       
+
+    }
+    // .upload-pic {
+    //     background-color: $white-color;
+    
+    //     .title-pic {
+    //         display: flex;
+    //         flex-direction: row;
+    //     }
+    //     .upload-remove {
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: space-around;
+    //     }
+    // }
+    // .basic-profil {
+    //     background-color: white;
+    //     .b-header {
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: space-between;
+    //     }
+    //     .my_form {
+    //         display: flex;
+    //         flex-direction: row;
+    //     }
+    // }
+    // .notifications {
+    //     background-color: white;
+    
+    //     .n-header {
+    //         display: flex;
+    //         flex-direction: row;
+    //         justify-content: space-between;
+    //     }
+    //     .notif-msg {
+    //         display: flex;
+    //         flex-direction: row;
+    //     }
+    // }
+    
 }
+
+
+
