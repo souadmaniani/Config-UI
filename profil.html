@@ -65,9 +65,9 @@
 	<!-- [END] Navbar -->
 
 	<!-- [BEGIN] Setting -->
-	<div id="setting" class="row">
+	<div id="setting" class="row ">
 		<!-- [BEGIN] Menu -->
-		<div id= "menu" class="col-3 align-self-start justify-content-start">
+		<div id= "menu" class="col-lg-2 align-self-start justify-content-start">
 			<div class="profil-img">
 				<img src="./assets/img/profil/pic-profil.svg" alt="">
 				<h4>Roman Kutepov</h4>
@@ -136,7 +136,7 @@
 		</div>
 		<!-- [END] Menu -->
 		<!-- [BEGIN] Profil -->
-		<div class="col-9" style="background-color: #F2F2F2;">
+		<div class="col-lg-10" style="background-color: #F2F2F2;">
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
 				  <a class="nav-link " href="#"><h4>Profile</h4></a>
@@ -148,10 +148,11 @@
 				  <a class="nav-link" href="#"><h4>Price Plans</h4></a>
 				</li>
 			</ul>
-			<div class="row">
-				<div class="col-3 upload-pic">
+			<!-- add some proprty to row -->
+			<div class="row justify-content-lg-around profil">
+				<div class="col-lg-3 upload-pic align-self-start">
 					<div class="title-pic">
-						<div>
+						<div class= "title">
 							<h1>Adrian Stefan</h1>
 							<h5>Rm. Valcea, Romania</h5>
 							<h5>4:32PM (GMT-4)</h5>
@@ -159,11 +160,20 @@
 						<img src="/assets/img/profil/user-pic.png" alt="user-picture">
 					</div>
 					<div class="upload-remove">
-						<h6>UPLOAD PICTURE</h6>
-						<h6>REMOVE PICTURE</h6>
+						<input	type="file"
+								id="upload-pic-b"
+								accept="image/png, image/jpeg"
+								class="d-none"
+						 >
+						 <label for="upload-pic-b" class="btn outline">UPLOAD PICTURE</label>
+						 <input	type="text"
+								id="remove-pic-b"
+								class="d-none"
+						 >
+						 <label for="remove-pic-b" class="btn outline remove-pic">REMOVE PICTURE</label>
 					</div>
 				</div>
-				<div class="col-7">
+				<div class="col-lg-7">
 					<div class="basic-profil">
 						<div class="b-header">
 							<h4>Basic Profile</h4>
@@ -262,10 +272,6 @@
 		<!-- [END] Profil -->
 	</div>
 	<!-- [END] Setting -->
-	<h2>box-shadow: 5px 10px:</h2>
-<div id="example1">
-  <p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
-</div>
 </body>
 
 
