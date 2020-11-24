@@ -1,7 +1,7 @@
 .setting-container {
     background-color: $primary-color-7;
     #setting {
-        padding-top: 55px;
+        padding-top: 50px;
        
     }
     #menu {
@@ -9,6 +9,8 @@
         padding-top: 24px ;
         padding-left: 34px;
         padding-right: 24px;
+        border: 1px solid red;
+        box-shadow: 1px 1px  yellow;
         .profil-img {
             display: flex;
             flex-direction: column;
@@ -50,19 +52,19 @@
        
 
     }
-    // .upload-pic {
-    //     background-color: $white-color;
+    .upload-pic {
+        // background-color: $white-color;
     
-    //     .title-pic {
-    //         display: flex;
-    //         flex-direction: row;
-    //     }
-    //     .upload-remove {
-    //         display: flex;
-    //         flex-direction: row;
-    //         justify-content: space-around;
-    //     }
-    // }
+        .title-pic {
+            // display: flex;
+            // flex-direction: row;
+        }
+        .upload-remove {
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: space-around;
+        }
+    }
     // .basic-profil {
     //     background-color: white;
     //     .b-header {
