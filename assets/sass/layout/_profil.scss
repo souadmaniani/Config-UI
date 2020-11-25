@@ -12,6 +12,7 @@
         border: 1px solid rgba(63, 63, 68, 0.005);
         box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
         z-index: 1;
+        width: 300px;
        
         .profil-img {
             display: flex;
@@ -56,10 +57,11 @@
 
     }
     .profil {
-        padding-top: 23px;
+        padding: 23px;
         .upload-pic {
             background-color: $white-color;
-            padding: 24px;
+            padding: 24px 0px;
+            margin-right: 9px;
             border-radius: 4px;
             box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 1px 0 0 rgba(63, 63, 68, 0.05);
             border: solid 1px rgba(63, 63, 68, 0);
@@ -71,8 +73,8 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                padding-bottom: 24px;
                 border-bottom: 1px solid $primary-color-8;
+                padding: 0 24px 24px;
                 .title {
                     h1 {
                         color: $primary-color-2;
@@ -83,6 +85,9 @@
                         font-family: $primary-regular;
                     } 
                 }
+                img {
+                    padding-left: 50px;
+                }
                
             }
             .upload-remove {
@@ -92,7 +97,7 @@
                 justify-content: space-around;
 
                 label {
-                    font-family: $primary-regular;
+                    font-family: $primary-medium;
                     &.btn {
                         padding: 8px 5px;
                     }
@@ -112,34 +117,129 @@
                 }
             }
         }
+        .basic-profil {
+            background-color: $white-color;
+            padding: 24px 0px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 1px 0 0 rgba(63, 63, 68, 0.05);
+            border: solid 1px rgba(63, 63, 68, 0);
+            z-index: 2;
+            margin-bottom: 24px;
+
+            .b-header {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 16px;
+                border-bottom: 1px solid $primary-color-8;
+                h4 {
+                    color: $primary-color-3;
+                    font-family: $primary-medium;
+                    padding-right: 20px;
+                    padding-left: 24px;
+                }
+                h5 {
+                    color: $primary-color-6;
+                    font-family: $primary-light;
+                }
+            }
+            #my-form {
+                .inputs {
+                    border-bottom: 1px solid $primary-color-8;
+                    padding: 24px;
+
+                    .floating-placeholder {
+                        width: 40% !important;
+                        @include for-size (md-down) {
+                            width: 70% !important;
+                        }
+                        padding-right: 24px;
+                        input {
+                            width: 100% !important;
+                        }
+                    }
+                }
+                .save-setting {
+                    margin: 24px;
+                    padding: 12px 16px;
+                    font-family: $primary-medium;
+                    border: 1px solid rgba(22, 101, 216, 0.1);
+                }
+            }
+        }
+        .notifications {
+            background-color: $white-color;
+            padding: 24px 0px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 1px 0 0 rgba(63, 63, 68, 0.05);
+            border: solid 1px rgba(63, 63, 68, 0);
+            z-index: 2;
+        
+            .n-header {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 16px;
+                border-bottom: 1px solid $primary-color-8;
+                h4 {
+                    color: $primary-color-3;
+                    font-family: $primary-medium;
+                    padding-right: 20px;
+                    padding-left: 24px;
+                }
+                h5 {
+                    color: $primary-color-6;
+                    font-family: $primary-light;
+                }
+            }
+            .notif-msg {
+                display: flex;
+                flex-direction: row;
+                padding: 24px;
+                h4 {
+                    color: $primary-color-3;
+                    font-family: $primary-medium;
+                }
+                .form-check {
+                    padding-bottom: 24px;
+                    h4 {
+                        font-family: $primary-regular;
+                        color: rgba(0, 0, 0, 0.6);
+                        
+                    }
+                    .form-check-input {
+                        width: 18px;
+                        height: 18px;
+
+                    }
+                    .form-check-label {
+                        padding-left: 9px;
+                        padding-top: 4px;
+                    }
+                    h6 {
+                        font-family: $primary-regular;
+                        color: $primary-color-6;
+                        padding-left: 9px;
+                    }
+                    
+                }
+                .notf-and-msg {
+                    padding-right: 85px;
+                    h4 {
+                        padding-bottom: 24px;
+                    }
+                }
+                
+            }
+            .button-save {
+                border-top: 1px solid $primary-color-8;
+            }
+            .save-change {
+                padding: 12px 45px;
+                margin: 24px;
+                border: 1px solid rgba(22, 101, 216, 0.1);
+            }
+            label {
+                font-family: $primary-medium;
+            }
+        }
     }
-    // .basic-profil {
-    //     background-color: white;
-    //     .b-header {
-    //         display: flex;
-    //         flex-direction: row;
-    //         justify-content: space-between;
-    //     }
-    //     .my_form {
-    //         display: flex;
-    //         flex-direction: row;
-    //     }
-    // }
-    // .notifications {
-    //     background-color: white;
-    
-    //     .n-header {
-    //         display: flex;
-    //         flex-direction: row;
-    //         justify-content: space-between;
-    //     }
-    //     .notif-msg {
-    //         display: flex;
-    //         flex-direction: row;
-    //     }
-    // }
-    
 }
-
-
-

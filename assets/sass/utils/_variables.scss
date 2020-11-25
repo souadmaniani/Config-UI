@@ -35,12 +35,14 @@ $primary-font: "Roboto";
 //Font Family
 $primary-regular: $primary-font + " Regular";
 $primary-medium: $primary-font + " Medium";
+$primary-light: $primary-font + " Light";
 
 // $secondary-regular: $secondary-font + " Regular";
 
 //Font Path
 $primary-regular-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
 $primary-medium-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
+$primary-light-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Light.ttf";
 
 // $secondary-regular-path: "../fonts/" + $secondary-font + "/" + $secondary-font + "-Regular.ttf";
 

@@ -67,7 +67,7 @@
 	<!-- [BEGIN] Setting -->
 	<div id="setting" class="row ">
 		<!-- [BEGIN] Menu -->
-		<div id= "menu" class="col-lg-2 align-self-start justify-content-start">
+		<div id= "menu" class="">
 			<div class="profil-img">
 				<img src="./assets/img/profil/pic-profil.svg" alt="">
 				<h4>Roman Kutepov</h4>
@@ -135,7 +135,9 @@
 			</nav>
 		</div>
 		<!-- [END] Menu -->
+
 		<!-- [BEGIN] Profil -->
+		<!-- [BEGIN] nav top -->
 		<div class="col-lg-10" style="background-color: #F2F2F2;">
 			<ul class="nav nav-tabs">
 				<li class="nav-item">
@@ -148,8 +150,12 @@
 				  <a class="nav-link" href="#"><h4>Price Plans</h4></a>
 				</li>
 			</ul>
-			<!-- add some proprty to row -->
-			<div class="row justify-content-lg-around profil">
+			<!-- [END] nav top -->
+
+			<!-- [BEGIN]content of profil -->
+			<div class="row  profil">
+
+				<!-- [BEGIN] upload-pic -->
 				<div class="col-lg-3 upload-pic align-self-start">
 					<div class="title-pic">
 						<div class= "title">
@@ -166,45 +172,55 @@
 								class="d-none"
 						 >
 						 <label for="upload-pic-b" class="btn outline">UPLOAD PICTURE</label>
-						 <input	type="text"
+						 <input	type="submit"
 								id="remove-pic-b"
 								class="d-none"
 						 >
 						 <label for="remove-pic-b" class="btn outline remove-pic">REMOVE PICTURE</label>
 					</div>
 				</div>
+				<!-- [END] upload-pic -->
+
+				<!-- [BEGIN] basic profil -->
 				<div class="col-lg-7">
 					<div class="basic-profil">
 						<div class="b-header">
 							<h4>Basic Profile</h4>
-							<h5>The information can be edited from yuor profile page</h5>
+							<h5>The information can be edited from your profile page</h5>
 						</div>
-						<form id="my-form" autocomplete="off" action="">
-							<div class="floating-placeholder">
-								<input type="text" name="first-name" id="First-name" placeholder="First name">
-								<label for="First-name"></label>
+						<form id="my-form" autocomplete="off"  action="#">
+							<div class= "inputs">
+								<div class="floating-placeholder">
+									<input type="text" name="first-name" id="First-name" placeholder="First name">
+									<label for="First-name"></label>
+								</div>
+								<div class="floating-placeholder">
+									<input type="text" name="last-name" id="Last-name" placeholder="Last name">
+									<label for="Last-name"></label>
+								</div>
+								<div class="floating-placeholder">
+									<input type="text" name="email-address" id="Email-Address" placeholder="Email Address">
+									<label for="Email-Address"></label>
+								</div>
+								<div class="floating-placeholder">
+									<input type="text" name="phone number" id="Phone-number" placeholder="Phone number">
+									<label for="Phone number"></label>
+								</div>
+								<div class="floating-placeholder">
+									<input type="text" name="school" id="School" placeholder="School">
+									<label for="School"></label>
+								</div>
+								<div class="floating-placeholder">
+									<input type="text" name="profession" id="Profession" placeholder="Profession">
+									<label for="Profession"></label>
+								</div>
 							</div>
-							<div class="floating-placeholder">
-								<input type="text" name="last-name" id="Last-name" placeholder="Last name">
-								<label for="Last-name"></label>
-							</div>
-							<div class="floating-placeholder">
-								<input type="text" name="email-address" id="Email-Address" placeholder="Email Address">
-								<label for="Email-Address"></label>
-							</div>
-							<div class="floating-placeholder">
-								<input type="text" name="phone number" id="Phone-number" placeholder="Phone number">
-								<label for="Phone number"></label>
-							</div>
-							<div class="floating-placeholder">
-								<input type="text" name="school" id="School" placeholder="School">
-								<label for="School"></label>
-							</div>
-							<div class="floating-placeholder">
-								<input type="text" name="profession" id="Profession" placeholder="Profession">
-								<label for="Profession"></label>
-							</div>
-							<input class="btn" type="submit" value="SAVE SETTINGS">
+							<!-- <input class="btn save-setting" type="submit" value="SAVE SETTINGS"> -->
+							<input	type="submit"
+									id="save-sett"
+									class="d-none"
+							>
+							<label for="save-sett" class="btn outline save-setting">SAVE SETTINGS</label>
 						</form>
 					</div>
 					<div class="notifications">
@@ -213,60 +229,67 @@
 							<h5>Mange the notifications emailing</h5>
 						</div>
 						<div class="notif-msg">
-							<div class="notif">
+							<div class="notif notf-and-msg">
 								<h4>Notifications</h4>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check1">
 									<label class="form-check-label" for="Check1">
-									<h4  style="display: inline;">Email</h4>
+										<h4  style="display: inline;">Email</h4>
 									</label>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check2" checked>
 									<label class="form-check-label" for="Check2">
-									<h4  style="display: inline;">Push notifications</h4>
+										<h4  style="display: inline;">Push notifications</h4>
 									</label>
 									<h6>For your mobile or tablet device</h6>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check3" checked>
 									<label class="form-check-label" for="Check3">
-									<h4  style="display: inline;">Text Messages</h4>
+										<h4  style="display: inline;">Text Messages</h4>
 									</label>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check4" checked>
 									<label class="form-check-label" for="Check4">
-									<h4  style="display: inline;">Phone Calls</h4>
+										<h4  style="display: inline;">Phone Calls</h4>
 									</label>
 								</div>
 							</div>
-							<div class="messages">
+							<div class="messages notf-and-msg">
 								<h4>Messages</h4>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check5">
 									<label class="form-check-label" for="Check5">
-									<h4  style="display: inline;">Email</h4>
+										<h4  style="display: inline;">Email</h4>
 									</label>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check6" >
 									<label class="form-check-label" for="Check6">
-									<h4  style="display: inline;">Push notifications</h4>
+										<h4  style="display: inline;">Push notifications</h4>
 									</label>
 									<h6>For your mobile or tablet device</h6>
 								</div>
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" value="" id="Check7" >
 									<label class="form-check-label" for="Check7">
-									<h4  style="display: inline;">Text Messages</h4>
+										<h4  style="display: inline;">Text Messages</h4>
 									</label>
 								</div>
 							</div>
 						</div>
-						<input class="btn" type="submit" value="Save">
-					</div>
+						<div class="button-save">
+							<input	type="submit"
+									id="save"
+									class="d-none"
+							>
+							<label for="save" class="btn outline save-change">SAVE</label>
+						</div>
+						</div>
 				</div>
+				<!-- [END] basic profil -->
 			</div>
 		</div>
 		<!-- [END] Profil -->
