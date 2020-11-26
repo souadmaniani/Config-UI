@@ -32,12 +32,12 @@
 	}
 	h5, a {
 		color: $primary-color;
-	&.sign-up {
-			margin-bottom: 38px;
-			@include for-size(md-down) {
-				margin-bottom: 16px;
+		&.sign-up {
+				margin-bottom: 38px;
+				@include for-size(md-down) {
+					margin-bottom: 16px;
+				}
 			}
-		}
 	}
 
 	.image {
@@ -64,7 +64,6 @@
 			.img-desc {
 				display: flex;
 				flex-direction: row;
-			
 				img {
 					width: 32px;
 					height: 32px;
@@ -86,12 +85,10 @@
 						}
 					}
 				}
-				
 			}
-			
 		}
 	}
-		
+
 	@include for-size(lg-down) {
 
 	}

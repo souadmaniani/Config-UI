@@ -1,13 +1,28 @@
 .setting-container {
-    
     position: relative;
     background-color: $primary-color-7;
+    .navbar {
+        background-color: $secondary-color-1;
+        a {
+            text-decoration: none;
+            padding: 6px 0px 10px 3px;
+            h2 {
+                color: $white-color;
+                padding-left: 20px;
+                display: inline-block;
+                vertical-align: sub;
+            }
+        }
+        span {
+             a {padding-right: 22px;}
+         }
+    }
     #setting {
         padding-top: 50px;
         
         #menu {
             background-color: $white-color;
-            padding-top: 24px ;
+            padding-top: 44px;
             padding-left: 34px;
             padding-right: 24px;
             border: 1px solid rgba(63, 63, 68, 0.005);
@@ -28,6 +43,7 @@
                 
                 img {
                     padding-bottom: 16px;
+                    cursor: pointer;
                 }
                 h4 {
                     color: $primary-color-3;
@@ -39,8 +55,14 @@
             nav {
                 padding-top: 24px;
                 a {
-                    padding-bottom: 37px;
-                    padding-left : 24px;
+                    padding: 0px 0px 37px 24px;
+                    text-decoration: none;
+                    &:hover {
+                        h5 {color: $primary-color-5;} 
+                    }
+                    &:hover {
+                        rect {fill: $primary-color-5;}
+                    }
                 }
                 h5 {
                     display: inline;
@@ -57,23 +79,23 @@
                 }
             }
         }
-        .container-profil {
-            
+        .container-profil {          
             .nav-profil {
-                padding-top: 19px;
-                padding-left: 318px;
-                .nav-link {
-                    padding-right: 55px;
-                    h4 {
-                        color: $primary-color-3;
-                        font-family: $primary-medium;
-    
-                    }
+                padding: 44px 0px 0px 318px;
+                .my-nav-link {
+                    padding: 0 20px 0;
+                    height: 43px;
+                    text-decoration: none;
+                }   
+                a:hover {
+                    border-bottom: 3px solid $primary-color-5; /* or whatever you'd prefer */
                 }
-                
-                
-                
+                h4 {
+                    color: $primary-color-3;
+                    font-family: $primary-medium;
+                }
             }
+                
             .profil {
                 padding: 32px  23px 23px 320px;
                 .upload-pic {
