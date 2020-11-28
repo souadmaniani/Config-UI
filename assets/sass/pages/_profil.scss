@@ -1,4 +1,4 @@
-.setting-container {
+.ui-container {
     position: relative;
     background-color: $primary-color-7;
     .navbar {
@@ -20,7 +20,7 @@
     #setting {
         padding-top: 50px;
         
-        #menu {
+        .menu {
             background-color: $white-color;
             padding-top: 44px;
             padding-left: 34px;

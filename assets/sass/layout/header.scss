@@ -1,0 +1,21 @@
+.navbar {
+    background-color: $secondary-color-1;
+    height: 64px;
+    padding: 14px 0px 14px 24px;
+    .navbar-brand {
+        text-decoration: none;
+        h2 {
+            color: $white-color;
+            padding-left: 22px;
+            display: inline-block;
+            vertical-align: sub;
+        }
+    }
+   .nav-icons {
+        position: absolute;
+        right: 32px;
+        #exit-icon {
+            padding-left: 22px;
+        }
+   } 
+}

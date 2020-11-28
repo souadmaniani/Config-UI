@@ -1,0 +1,58 @@
+aside {
+    background-color: $white-color;
+    margin-top: 64px;
+    padding: 38px 16px 0;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+    z-index: 1;
+    width: 300px;
+    height: calc(100vh);
+    position: fixed;
+    overflow: auto;
+
+    .profil-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 24px ;
+        border-bottom: 1px solid $primary-color-8;
+        
+        img {
+            padding-bottom: 16px;
+            cursor: pointer;
+        }
+        h4 {
+            color: $primary-color-3;
+        }
+        h6 {
+            color: $primary-color;
+        }
+    }
+    nav {
+        padding-top: 24px;
+        a {
+            padding: 0px 0px 37px 24px;
+            text-decoration: none;
+            &:hover {
+                h5 {color: $primary-color-5;} 
+            }
+            &:hover {
+                rect {fill: $primary-color-5;}
+            }
+        }
+        h5 {
+            display: inline;
+            padding-left: 10px;
+            color: $primary-color-6;
+        }
+        .support {
+            padding-top: 137px;
+            border-top: 1px solid $primary-color-8;
+            h6 {
+                padding-left: 20px;
+                color: rgba(0,0,0,0.33);
+            }
+        }
+    }
+}
