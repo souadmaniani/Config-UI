@@ -1,13 +1,82 @@
 .ui-container {
     position: relative;
     background-color: $primary-color-7;
-    main {
+    .dash-container {
         margin-left: 300px;
         padding-left: 23px;
         padding-top: 88px;
         margin-right: 27px;
         .card {
-
+            padding: 20px 24px 30px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 1px 0 0 rgba(63, 63, 68, 0.05);
+            border: solid 1px rgba(63, 63, 68, 0);
+            background-color: $white-color;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 31px;
+            @include for-size(lg-up) {
+                margin-bottom: 31px;
+            }
+            h6 {
+                font-family: $primary-bold;
+                color: $primary-color-6;
+            }
+            h1 {
+                color: $primary-color-2;
+                padding-bottom: 36px;
+            }
+            .card3-rect {
+                position: relative;
+                width: 329px;
+                height: 4px;
+                margin: 30px 8px 0 0;
+                padding: 0 204px 0 0;
+                border-radius: 3px;
+                background-color: $primary-color-8;
+                .card3-rect-small {
+                    position: absolute;
+                    width: 38%;
+                    height: 100%;
+                    border-radius: 3px;
+                    background-color: $primary-color-5;
+                }
+            }
+            .group {
+                display: flex;
+                flex-direction: row;
+                margin: 30px 8px 0 0;
+                svg {margin: 5px 8px 0 0;}
+                h6 {
+                    margin-right: 8px;
+                    font-family: $primary-regular;
+                    color: $primary-color-6;
+                }
+                .prc1 {
+                    color: $secondary-color-3;
+                    font-family: $primary-medium;
+                }
+                .prc2 {color: $secondary-color-4;}
+            }
+            .oval {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                padding: 19px 18px 19px 17px;
+               
+            }
+            .oval1 { background-color: $secondary-color-2;}
+            .oval2 { background-color: $secondary-color-3;}
+            .oval3 { background-color: $secondary-color-5;}
+        }
+        .card4 {
+            background-color: $secondary-color-1;
+            h1 {color: $white-color;}
+            h6 {color: $white-color;}
+            .group {
+                h6 {color: $white-color;}
+            }
         }
     }    
 }

@@ -41,6 +41,7 @@ $primary-font: "Roboto";
 $primary-regular: $primary-font + " Regular";
 $primary-medium: $primary-font + " Medium";
 $primary-light: $primary-font + " Light";
+$primary-bold: $primary-font + " Bold";
 
 // $secondary-regular: $secondary-font + " Regular";
 
@@ -48,6 +49,7 @@ $primary-light: $primary-font + " Light";
 $primary-regular-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
 $primary-medium-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
 $primary-light-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Light.ttf";
+$primary-bold-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Bold.ttf";
 
 // $secondary-regular-path: "../fonts/" + $secondary-font + "/" + $secondary-font + "-Regular.ttf";
 
