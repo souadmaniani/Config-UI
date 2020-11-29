@@ -1,4 +1,13 @@
+.navbar-collapse {
+    display:block !important;
+}
+@include for-size (xl-down) {
+    .collapse:not(.show) {
+        display: none  !important;
+    }
+}
 aside {
+    position: absolute;
     background-color: $white-color;
     margin-top: 64px;
     padding: 38px 16px 0;
@@ -7,9 +16,8 @@ aside {
     z-index: 1;
     width: 300px;
     height: calc(100vh);
-    position: fixed;
     overflow: auto;
-
+    transition:  0.5s;
     .profil-img {
         display: flex;
         flex-direction: column;

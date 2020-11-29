@@ -16024,15 +16024,9 @@ placeholder {
 }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   background-color: #3F51B5;
   height: 64px;
   padding: 14px 0px 14px 24px;
-}
-.navbar .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar .navbar-brand {
   display: flex;
@@ -16043,6 +16037,9 @@ placeholder {
   color: #ffffff;
   padding-left: 22px;
   margin-bottom: 0;
+}
+.navbar .navbar-brand .navbar-toggler-icon {
+  color: #ffffff;
 }
 .navbar .nav-icons {
   position: absolute;
@@ -16057,17 +16054,7 @@ placeholder {
   padding-left: 22px;
 }
 
-.navbar-collapse {
-  display: block !important;
-}
-
-@media (max-width: 1200px) {
-  .collapse:not(.show) {
-    display: none !important;
-  }
-}
 aside {
-  position: absolute;
   background-color: #ffffff;
   margin-top: 64px;
   padding: 38px 16px 0;
@@ -16076,8 +16063,8 @@ aside {
   z-index: 1;
   width: 300px;
   height: calc(100vh);
+  position: fixed;
   overflow: auto;
-  transition: 0.5s;
 }
 aside .profil-img {
   display: flex;
@@ -16244,7 +16231,7 @@ aside nav .support h6 {
 }
 @media (max-width: 1200px) {
   .ui-container .dash-container {
-    margin-left: 0px;
+    margin-lef: 23px;
   }
 }
 .ui-container .dash-container .card {
@@ -16350,4 +16337,4 @@ aside nav .support h6 {
   color: #ffffff;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

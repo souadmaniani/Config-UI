@@ -18,6 +18,10 @@
 @import "components/inputs";
 
 // 5 - Layout;
-@import "layout/authentification";
-@import "layout/profil";
+@import "layout/header.scss";
+@import "layout/sidebar.scss";
+// 6 - pages;
+@import "pages/authentification";
+// @import "pages/profil";
+@import "pages/dashboard";
 
