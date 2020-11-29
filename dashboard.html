@@ -24,20 +24,15 @@
 	<!-- <link rel="shortcut icon" href="./assets/img/logo/favicon.ico"> -->
 
 </head>
-<body class="ui-container">
+<body class="ui-container" id="test">
 	<!-- [BEGIN] Navbar -->
 	<nav class="navbar navbar-expand-xl fixed-top">
 		<a class="navbar-brand" href="#" >
 			<img src="../assets/img/profil/logo.svg" alt="UI Config">
 			<h2>Config UI</h2>
 		</a>
-		<button class="navbar-toggler" 
-				type="button" data-toggle="collapse" 
-				data-target="#navbarNav" 
-				aria-controls="navbarNav" 
-				aria-expanded="false" 
-				aria-label="Toggle navigation"> 
-   			 <span class="navbar-toggler-icon"></span> 
+		<button class="openbtn" 
+				onclick="manageNav()">☰ 
 		</button>
 		<div class="nav-icons">
 			<a href="#" id="notif-icon">
@@ -64,13 +59,14 @@
 	</nav>
 	<!-- [END] Navbar -->
 	<!-- [BEGIN] Menu -->
-	<aside class= "menu collapse navbar-collapse sidepanel" id="navbarNav">
-		<div class="profil-img">
+	<aside class= "menu sidepanel" id="mySidepanel">
+		<!-- <a class="closebtn" onclick="closeNav()">×</a> -->
+		<div class="profil-img" id="profilId">
 			<img src="./assets/img/profil/pic-profil.svg" alt="">
 			<h4>Roman Kutepov</h4>
 			<h6>Brain Director</h6>
 		</div>
-		<nav class="nav flex-column">
+		<nav class="nav flex-column" id="navId">
 			<a class="brand" href="#">
 				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
@@ -265,6 +261,38 @@
 	<script src="./assets/js/owl.carousel.min.js"></script>
 	<!-- Application -->
 	<script src="./assets/js/main.js"></script>
+	<script>
+			function manageNav() {
+				var exist = false;
+				if(($('#mySidepanel').is('visible'))) {
+					exist = true;
+					console.log("1\n");
+				}
+				if (!exist){
+					document.getElementById("mySidepanel").style.visibility = "visible";
+					exist = true;
+					console.log("2\n");
+					return 0;
+				}
+				if (exist){
+					document.getElementById("mySidepanel").style.visibility = "hidden";
+					exist = false;
+					console.log("3\n");
+					return 0;
+				}
+			}
+		// function closeNav() {
+		// 	document.getElementById("mySidepanel").style.width = "0";
+		// 	document.getElementById("mySidepanel").style.paddingLeft = "0";
+		// 	document.getElementById("mySidepanel").style.paddingRight = "0";
+		// 	const divIds = $.map($('#mySidepanel > nav'), nav => nav.id);
+		// 	divIds.forEach(element => {
+		// 		document.getElementById(element).style.display = "none";
+		// 	});
+		// 	document.getElementById("profilId").style.display = "none";
+		// 	document.getElementById("mySidepanel").style.transitionDuration = "300ms";
+		// }
+	</script>
 </body>
 
 </html>

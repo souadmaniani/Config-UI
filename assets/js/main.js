@@ -20,8 +20,15 @@ $(() => {
 	});
 	
     initTricks();
-
    // ====== [END] floating-placeholder ======
+		// function openNav() {
+		// 	document.getElementById("mySidepanel").style.width = "300px";
+		// }
+
+		// function closeNav() {
+		// 	document.getElementById("mySidepanel").style.width = "0";
+		// }
+	
 	// ====== [BEGIN] Owl Carousel ======
 	// $('#how-it-works .owl-carousel').owlCarousel({
 	// 	nav: true,

@@ -1,44 +1,82 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style> 
-#example1 {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
 }
 
-#example2 {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-#example3 {
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px red;
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* .sidepanel a:hover {
+  color: #f1f1f1;
+} */
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#444;
 }
 </style>
 </head>
 <body>
 
-<h1>The box-shadow Property</h1>
-<p>The box-shadow property defines the shadow of an element:</p>
-
-<h2>box-shadow: 5px 10px:</h2>
-<div id="example1">
-  <p>A div element with a shadow. The first value is the horizontal offset and the second value is the vertical offset. The shadow color will be inherited from the text color.</p>
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
 </div>
 
-<h2>box-shadow: 5px 10px #888888:</h2>
-<div id="example2">
-  <p>You can also define the color of the shadow. Here the shadow color is grey.</p>
-</div>
+<button class="openbtn" onclick="openNav()">☰ Toggle Sidepanel</button>  
+<h2>Collapsed Sidepanel</h2>
+<p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
 
-<h2>box-shadow: 5px 10px red:</h2>
-<div id="example3">
-  <p>A red shadow.</p>
-</div>
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script>
+   
 </body>
-</html>
+</html> 
