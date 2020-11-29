@@ -1,8 +1,6 @@
 /*=== Import Fonts ===*/
 @include font-face($primary-regular, $primary-regular-path);
 @include font-face($primary-medium, $primary-medium-path);
-@include font-face($primary-light, $primary-light-path);
-@include font-face($primary-bold, $primary-bold-path);
 
 // @include font-face($secondary-regular, $secondary-regular-path);
 
