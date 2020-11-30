@@ -24,9 +24,9 @@
 	<!-- <link rel="shortcut icon" href="./assets/img/logo/favicon.ico"> -->
 
 </head>
-<body class="ui-container" id="test">
+<body class="ui-container">
 	<!-- [BEGIN] Navbar -->
-	<nav class="navbar navbar-expand-xl fixed-top">
+	<nav class="navbar navbar-expand-xl fixed-top" id="navId">
 		<a class="navbar-brand" href="#" >
 			<img src="../assets/img/profil/logo.svg" alt="UI Config">
 			<h2>Config UI</h2>
@@ -129,9 +129,9 @@
 	</aside>
 	<!-- [END] Menu -->
 	<!-- [BEGIN] Dash-container -->
-	<main>
+	<main id="mainId">
 		<div class=" dash-container">
-			<div class="card">
+			<div class="my-card card1">
 				<div class="card-up">
 					<div>
 						<h6>TOTAL PIPELINES</h6>
@@ -162,7 +162,7 @@
 					<h6>Since last month</h6>
 				</div>
 			</div>
-			<div class="card">
+			<div class="my-card">
 				<div class="card-up">
 					<div>
 						<h6>DATA VOLUME</h6>
@@ -192,7 +192,7 @@
 					<h6>Since last month</h6>
 				</div>
 			</div>
-			<div class="card">
+			<div class="my-card card3">
 				<div class="card-up">
 					<div>
 						<h6>DATA LOAD SUCCESS RATE</h6>
@@ -213,7 +213,7 @@
 					<div class="card3-rect-small"></div>
 				</div>
 			</div>
-			<div class="card card4">
+			<div class="my-card card4">
 				<div class="card-up">
 					<div>
 						<h6>TOTAL DATA PROCESSED</h6>
@@ -246,6 +246,76 @@
 			</div>
 		</div>
 		<!-- [END] Dash-container -->
+		<!-- [BEGIN] All Pipelines table -->
+		<div class="dash-container" style="margin-top:46px;padding-top: 0px;">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th scope="row"><h4>All Pipelines</h4> <h6>3200 total</h6></th>
+						<td></td>
+						<td></td>
+						<td colspan="3"> <h5>Sort by: Newest</h5> <h5>NEW PIPELINE</h5></td>
+
+					  </tr>
+				  <tr>
+					<th scope="col"><h5>Pipeline ID</h5></th>
+					<th scope="col"><h5>Pipeline Name</h5></th>
+					<th scope="col"><h5>Last Updated</h5></th>
+					<th scope="col"><h5>Status</h5></th>
+					<th scope="col"><h5>Actions</h5></th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row"><h5>23412355-2</h5></th>
+					<td><h5>Cash Movement File Load</h5></td>
+					<td><h5>04/28/2020</h5></td>
+					<td><h5>Active</h5></td>
+					<td><h5>EDIT</h5></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><h5>23412355-2</h5></th>
+					<td><h5>Load Cash Movement Files</h5></td>
+					<td><h5>04/28/2020</h5></td>
+					<td><h5>Pending</h5></td>
+					<td><h5>EDIT</h5></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><h5>23412355-2</h5></th>
+					<td><h5>Chioke Okonkwo</h5></td>
+					<td><h5>04/28/2020</h5></td>
+					<td><h5>Inactive</h5></td>
+					<td><h5>EDIT</h5></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><h5>23412355-2</h5></th>
+					<td><h5>Erin Green</h5></td>
+					<td><h5>04/28/2020</h5></td>
+					<td><h5>Delivered</h5></td>
+					<td><h5>EDIT</h5></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><h5>23412355-2</h5></th>
+					<td><h5>Iruka Akuchi</h5></td>
+					<td><h5>04/28/2020</h5></td>
+					<td><h5>Delivered</h5></td>
+					<td><h5>EDIT</h5></td>
+				  </tr>
+				  <tr>
+					<th scope="row"><h5>23412355-2</h5></th>
+					<td><h5>Iruka Akuchi</h5></td>
+					<td><h5>04/28/2020</h5></td>
+					<td><h5>Delivered</h5></td>
+					<td><h5>EDIT</h5></td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <div class="card-colored">
+				  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reprehenderit ipsa voluptates sit quod mollitia voluptatum dolorem praesentium ratione, incidunt animi earum doloremque labore dicta veritatis provident tempora odio ab.
+			  </div>
+		</div>
+	
+		<!-- [END] All Pipelines table -->
 	</main>
 </body>
 
@@ -263,21 +333,21 @@
 	<script src="./assets/js/main.js"></script>
 	<script>
 			function manageNav() {
+				var x = document.getElementById("mySidepanel");
 				var exist = false;
-				if(($('#mySidepanel').is('visible'))) {
+
+				if (window.getComputedStyle(x).visibility === "visible") {
 					exist = true;
-					console.log("1\n");
 				}
-				if (!exist){
-					document.getElementById("mySidepanel").style.visibility = "visible";
+				if (!exist) {
+					x.style.visibility = "visible";
+					x.style.marginTop = "0";
 					exist = true;
-					console.log("2\n");
 					return 0;
 				}
-				if (exist){
-					document.getElementById("mySidepanel").style.visibility = "hidden";
+				if (exist) {
+					x.style.visibility = "hidden";
 					exist = false;
-					console.log("3\n");
 					return 0;
 				}
 			}

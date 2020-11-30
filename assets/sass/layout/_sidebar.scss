@@ -8,20 +8,18 @@
 // }
 
 aside {
-    @include for-size (xl-down) {
-        visibility: hidden;
-    }
+    visibility: visible;
     position: fixed;
     width: 300px;
     background-color: $white-color;
     margin-top: 64px;
-    padding: 38px 16px 0;
+    padding: 24px 16px 0;
     border: 1px solid rgba(63, 63, 68, 0.005);
     box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
-    z-index: 10;
+    z-index: 1031;
     height: calc(100vh);
     overflow: auto;
-    transition: 0.3s;
+    transition: visibility $duration-1 $timing-1;
     .profil-img {
         display: flex;
         flex-direction: column;
@@ -72,6 +70,13 @@ aside {
                 color: rgba(0,0,0,0.33);
             }
         }
+    }
+    @include for-size (xl-down) {
+        visibility: hidden;
+        transition: visibility $duration-1 $timing-1;
+    }
+    @include for-size (xl-up) {
+        margin-top: 64px !important;
     }
    
 }
