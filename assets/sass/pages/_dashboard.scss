@@ -1,26 +1,19 @@
 .ui-container {
     position: relative;
     background-color: $primary-color-7;
-    .dash-container {
+    .cards-container {
         margin-left: 300px;
         padding-left: 24px;
         padding-top: 88px;
         margin-right: 24px;
         position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex (space-between, stretch);
         @include for-size(xl-down) {
             flex-wrap: wrap;
             margin-left: 0px;
         }
         .my-card {
-            // height: 160px;
-            padding: 20px 24px 24px;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15), 0 1px 0 0 rgba(63, 63, 68, 0.05);
-            border: solid 1px rgba(63, 63, 68, 0);
-            background-color: $white-color;
+            @include bg-card (20px, 24px, 24px, 24px);
             margin-right: 31px;
             width: 25%;
             @include for-size(xl-down) {
@@ -28,14 +21,12 @@
                 margin-bottom: 24px;
                 margin-right: 0;
             }
-            @media only screen and (max-width:587px) {
-                width:100%;
+            @include for-size(sm-down) {
+                width: 100%;
             }
             .card-up {
                 background-color: $white-color;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                @include flex (space-between, stretch);
             }
             h6 {
                 font-family: $primary-bold;
@@ -63,7 +54,6 @@
             }
             .group {
                 display: flex;
-                flex-direction: row;
                 margin: 24px 8px 0 0;
                 svg {margin: 5px 8px 0 0;}
                 h6 {
@@ -98,7 +88,99 @@
                 h6 {color: $white-color;}
             }
         }
-    }    
+    }
+    .peplines-container {
+        margin: 46px 24px 0 300px;
+        padding-left: 24px;
+        padding-top: 0px;
+        position: relative;
+        @include flex (space-between, stretch);
+        flex-wrap: wrap;
+        @include for-size(xl-down) {
+            margin-left: 0px;
+        }
+        .all-peplines {
+            width: 75%;
+            @include bg-card (16px, 27px, 22px, 24px);
+            @include for-size (xl-down) {
+                width: 100%;
+            }
+            table {thead{th{border-bottom: none;border-top: none;}}} 
+            .header-table {
+                @include flex (space-between, center);
+                margin-bottom: 34px;
+            } 
+            h4 {
+                margin-right: 50px;
+                font-family: $primary-medium;
+                font-size: $size-1;
+                color: $primary-color-3;
+                display: inline-block ;
+            }
+            h6 {
+                font-family: $primary-regular;
+                font-size: $size;
+                color: $primary-color;
+                display: inline-block;
+               
+            }
+            h5 {display: inline-block;}
+            .sort-by{
+                font-family: $primary-medium;
+                color: $primary-color-3;
+                margin-right: 15px;
+            }
+            svg {
+                margin-right: 31px;
+            }
+            button {
+                padding: 0 18px 0;
+                height: 36px;
+                border: solid 1px #d4e6ff;
+            }
+            tr {
+                h5 {
+                   font-family: $primary-regular;
+                   color: $primary-color-3;
+                }
+                .pip-name {font-family: $primary-medium;}
+                .pip-date {color: $primary-color;}
+                .status {color: $primary-color;}
+                svg {
+                    margin: 6px 8px 6px 0;
+                }
+            }
+        }
+        .card-colored {
+            width: 22%;
+            @include bg-card (18px, 21px, 10px, 24px);
+            @include for-size (xl-down) {
+                width: 50%;
+            }
+            @include for-size (lg-down) {
+                width: 100%;
+            }
+        }
+        // .c1 {
+        //     width: 22%;
+        //     @include for-size (xl-down) {
+        //         width: 50%;
+        //     }
+        //     @include for-size (lg-down) {
+        //         width: 100%;
+        //     }
+        // }
+        // .c2 {
+        //     width: 75%;
+        //     @include for-size (xl-down) {
+        //         width: 100%;
+        //     }
+        //     @include for-size (lg-down) {
+        //         width: 100%;
+        //     }
+        // }
+    }
 }
+
 
     

@@ -130,7 +130,8 @@
 	<!-- [END] Menu -->
 	<!-- [BEGIN] Dash-container -->
 	<main id="mainId">
-		<div class=" dash-container">
+		<!-- [BEGIN] cards-container -->
+		<div class="cards-container">
 			<div class="my-card card1">
 				<div class="card-up">
 					<div>
@@ -245,78 +246,110 @@
 				</div>				
 			</div>
 		</div>
-		<!-- [END] Dash-container -->
+		<!-- [END] cards-container -->
 		<!-- [BEGIN] All Pipelines table -->
-		<div class="dash-container" style="margin-top:46px;padding-top: 0px;">
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th scope="row"><h4>All Pipelines</h4> <h6>3200 total</h6></th>
-						<td></td>
-						<td></td>
-						<td colspan="3"> <h5>Sort by: Newest</h5> <h5>NEW PIPELINE</h5></td>
-
-					  </tr>
-				  <tr>
-					<th scope="col"><h5>Pipeline ID</h5></th>
-					<th scope="col"><h5>Pipeline Name</h5></th>
-					<th scope="col"><h5>Last Updated</h5></th>
-					<th scope="col"><h5>Status</h5></th>
-					<th scope="col"><h5>Actions</h5></th>
-				  </tr>
-				</thead>
-				<tbody>
-				  <tr>
-					<th scope="row"><h5>23412355-2</h5></th>
-					<td><h5>Cash Movement File Load</h5></td>
-					<td><h5>04/28/2020</h5></td>
-					<td><h5>Active</h5></td>
-					<td><h5>EDIT</h5></td>
-				  </tr>
-				  <tr>
-					<th scope="row"><h5>23412355-2</h5></th>
-					<td><h5>Load Cash Movement Files</h5></td>
-					<td><h5>04/28/2020</h5></td>
-					<td><h5>Pending</h5></td>
-					<td><h5>EDIT</h5></td>
-				  </tr>
-				  <tr>
-					<th scope="row"><h5>23412355-2</h5></th>
-					<td><h5>Chioke Okonkwo</h5></td>
-					<td><h5>04/28/2020</h5></td>
-					<td><h5>Inactive</h5></td>
-					<td><h5>EDIT</h5></td>
-				  </tr>
-				  <tr>
-					<th scope="row"><h5>23412355-2</h5></th>
-					<td><h5>Erin Green</h5></td>
-					<td><h5>04/28/2020</h5></td>
-					<td><h5>Delivered</h5></td>
-					<td><h5>EDIT</h5></td>
-				  </tr>
-				  <tr>
-					<th scope="row"><h5>23412355-2</h5></th>
-					<td><h5>Iruka Akuchi</h5></td>
-					<td><h5>04/28/2020</h5></td>
-					<td><h5>Delivered</h5></td>
-					<td><h5>EDIT</h5></td>
-				  </tr>
-				  <tr>
-					<th scope="row"><h5>23412355-2</h5></th>
-					<td><h5>Iruka Akuchi</h5></td>
-					<td><h5>04/28/2020</h5></td>
-					<td><h5>Delivered</h5></td>
-					<td><h5>EDIT</h5></td>
-				  </tr>
-				</tbody>
-			  </table>
-			  <div class="card-colored">
-				  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reprehenderit ipsa voluptates sit quod mollitia voluptatum dolorem praesentium ratione, incidunt animi earum doloremque labore dicta veritatis provident tempora odio ab.
-			  </div>
+		<div class="peplines-container">
+			<div class="all-peplines">
+				<div class="header-table">
+					<div><h4>All Pipelines</h4><h6 >3200 total</h6></div>
+					<div>
+						<h5 class="sort-by">Sort by: Newest</h5>
+						<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="drop-down4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="5">
+							<path d="M0 0L5.5 5L11 0H0Z" fill="white"/>
+							</mask>
+							<g mask="url(#drop-down4)">
+							<rect x="-7" y="-10" width="25" height="24" fill="#9EA0A5"/>
+							</g>
+						</svg>
+						<button class="btn outline"  onclick=""><h5>NEW PIPELINE</h5></button>
+					</div>
+				</div>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th scope="col"><h5>Pipeline ID</h5></th>
+							<th scope="col"><h5>Pipeline Name</h5></th>
+							<th scope="col"><h5>Last Updated</h5></th>
+							<th scope="col"><h5>Status</h5></th>
+							<th scope="col"><h5>Actions</h5></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><h5>23412355-2</h5></th>
+							<td ><h5 class="pip-name">Cash Movement File Load</h5></td>
+							<td><h5 class="pip-date">04/28/2020</h5></td>
+							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47B881"/>
+								</svg>
+								<h5 class="status">Active</h5>
+							</td>
+							<td><h5>EDIT</h5></td>
+						</tr>
+						<tr>
+							<th scope="row"><h5>23412355-2</h5></th>
+							<td ><h5 class="pip-name">Load Cash Movement Files</h5></td>
+							<td><h5 class="pip-date">04/28/2020</h5></td>
+							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#F7D154"/>
+								</svg>
+								<h5 class="status">Pending</h5></td>
+							<td><h5>EDIT</h5></td>
+						</tr>
+						<tr>
+							<th scope="row"><h5>23412355-2</h5></th>
+							<td ><h5 class="pip-name">Chioke Okonkwo</h5></td>
+							<td><h5 class="pip-date">04/28/2020</h5></td>
+							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#ec4c47"/>
+								</svg>
+								<h5 class="status">Inactive</h5></td>
+							<td><h5>EDIT</h5></td>
+						</tr>
+						<tr>
+							<th scope="row"><h5>23412355-2</h5></th>
+							<td ><h5 class="pip-name">Erin Green</h5></td>
+							<td><h5 class="pip-date">04/28/2020</h5></td>
+							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#f7d154"/>
+								</svg>
+								<h5 class="status">Delivered</h5></td>
+							<td><h5>EDIT</h5></td>
+						</tr>
+						<tr>
+							<th scope="row"><h5>23412355-2</h5></th>
+							<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
+							<td><h5 class="pip-date">04/28/2020</h5></td>
+							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
+								</svg>
+								<h5 class="status">Delivered</h5></td>
+							<td><h5>EDIT</h5></td>
+						</tr>
+						<tr>
+							<th scope="row"><h5>23412355-2</h5></th>
+							<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
+							<td><h5 class="pip-date">04/28/2020</h5></td>
+							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
+								</svg>
+								<h5 class="status">Delivered</h5></td>
+							<td><h5>EDIT</h5></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="card-colored">
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas reprehenderit ipsa voluptates sit quod mollitia voluptatum dolorem praesentium ratione, incidunt animi earum doloremque labore dicta veritatis provident tempora odio ab.
+			</div>
+			<!-- <div class= "c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquam dolor eveniet et, nihil voluptatum quidem minus. Nemo officiis nisi nostrum in voluptatibus quasi sint, itaque, at vitae, reiciendis quibusdam.</div>
+			<div class= "c2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laudantium sit architecto atque fugit provident nulla nemo corporis neque magni officiis adipisci laborum corrupti, quidem, velit ab incidunt quas! Non.</div> -->
 		</div>
-	
 		<!-- [END] All Pipelines table -->
+		
 	</main>
+	<!-- [END] Dash-container -->
 </body>
 
 
