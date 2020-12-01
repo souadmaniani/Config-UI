@@ -1,6 +1,6 @@
 .ui-container {
     position: relative;
-    background-color: $primary-color-7;
+    background-color: $primary-color-8;
     .cards-container {
         margin-left: 300px;
         padding-left: 24px;
@@ -90,7 +90,7 @@
         }
     }
     .peplines-container {
-        margin: 46px 24px 0 300px;
+        margin: 24px 24px 0 300px;
         padding-left: 24px;
         padding-top: 0px;
         position: relative;
@@ -100,6 +100,7 @@
             margin-left: 0px;
         }
         .all-peplines {
+            margin-top: 22px;
             width: 75%;
             @include bg-card (16px, 27px, 22px, 24px);
             @include for-size (xl-down) {
@@ -149,9 +150,19 @@
                 svg {
                     margin: 6px 8px 6px 0;
                 }
+                td {
+                    button {
+                        height: 30px;
+                        padding: 0;
+                        border: none;
+                        background-color: transparent;
+                        margin-right: 30px;
+                    }
+                }
+                
             }
         }
-        .card-colored {
+        .colored-card {
             width: 22%;
             @include bg-card (18px, 21px, 10px, 24px);
             @include for-size (xl-down) {
@@ -160,6 +171,45 @@
             @include for-size (lg-down) {
                 width: 100%;
             }
+            .card-c-header {
+                @include flex (space-between, stretch);
+                padding-bottom: 18px;
+                border-bottom: 1px solid $primary-color-8;
+                background-color: $white-color;
+                h4 {
+                    display: inline-block;
+                    color: $primary-color-3;
+                    font-family: $primary-medium;
+                    margin-right: 84px;
+
+                }
+                button {background-color: transparent;}
+            }
+            .card-c-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .colored-circle {
+                margin-top: 25px;
+                width: 244px;
+                height: 244px;
+                border-radius: 50%;
+                border: 12px solid transparent;
+                background-size: 100% 100%, 40% 40%, 80% 100%, 100% 100%;
+                background-repeat: no-repeat;
+                background-image: linear-gradient(white, white), 
+                                    linear-gradient($secondary-color-6 100%, lightgrey 30%),
+                                    linear-gradient( $secondary-color-5 100%, lightgrey 30%),
+                                    linear-gradient( $secondary-color-2 100%, lightgrey 30%);
+                                    // linear-gradient(210deg, green 100%, lightgrey 30%);
+                background-position: center center, left top, right top, left bottom;
+                background-origin: content-box, border-box, border-box, border-box;
+                background-clip: content-box, border-box, border-box, border-box;
+                transform: rotate(5deg);
+            }
+           
         }
         // .c1 {
         //     width: 22%;
