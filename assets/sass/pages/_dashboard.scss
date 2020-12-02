@@ -1,6 +1,6 @@
 .ui-container {
     position: relative;
-    background-color: $primary-color-8;
+    background-color: $primary-color-10;
     .cards-container {
         margin-left: 300px;
         padding-left: 24px;
@@ -8,7 +8,7 @@
         margin-right: 24px;
         position: relative;
         @include flex (space-between, stretch);
-        @include for-size(xl-down) {
+        @include for-size(xxl-down) {
             flex-wrap: wrap;
             margin-left: 0px;
         }
@@ -16,7 +16,7 @@
             @include bg-card (20px, 24px, 24px, 24px);
             margin-right: 31px;
             width: 25%;
-            @include for-size(xl-down) {
+            @include for-size(xxl-down) {
                 width: 49%;
                 margin-bottom: 24px;
                 margin-right: 0;
@@ -96,77 +96,15 @@
         position: relative;
         @include flex (space-between, stretch);
         flex-wrap: wrap;
-        @include for-size(xl-down) {
+        @include for-size(xxl-down) {
             margin-left: 0px;
-        }
-        .all-peplines {
-            margin-top: 22px;
-            width: 75%;
-            @include bg-card (16px, 27px, 22px, 24px);
-            @include for-size (xl-down) {
-                width: 100%;
-            }
-            table {thead{th{border-bottom: none;border-top: none;}}} 
-            .header-table {
-                @include flex (space-between, center);
-                margin-bottom: 34px;
-            } 
-            h4 {
-                margin-right: 50px;
-                font-family: $primary-medium;
-                font-size: $size-1;
-                color: $primary-color-3;
-                display: inline-block ;
-            }
-            h6 {
-                font-family: $primary-regular;
-                font-size: $size;
-                color: $primary-color;
-                display: inline-block;
-               
-            }
-            h5 {display: inline-block;}
-            .sort-by{
-                font-family: $primary-medium;
-                color: $primary-color-3;
-                margin-right: 15px;
-            }
-            svg {
-                margin-right: 31px;
-            }
-            button {
-                padding: 0 18px 0;
-                height: 36px;
-                border: solid 1px #d4e6ff;
-            }
-            tr {
-                h5 {
-                   font-family: $primary-regular;
-                   color: $primary-color-3;
-                }
-                .pip-name {font-family: $primary-medium;}
-                .pip-date {color: $primary-color;}
-                .status {color: $primary-color;}
-                svg {
-                    margin: 6px 8px 6px 0;
-                }
-                td {
-                    button {
-                        height: 30px;
-                        padding: 0;
-                        border: none;
-                        background-color: transparent;
-                        margin-right: 30px;
-                    }
-                }
-                
-            }
         }
         .colored-card {
             width: 22%;
             @include bg-card (18px, 21px, 10px, 24px);
-            @include for-size (xl-down) {
-                width: 50%;
+            @include for-size (xxl-down) {
+                width: 49%;
+                margin-top: 29px;
             }
             @include for-size (lg-down) {
                 width: 100%;
@@ -193,44 +131,153 @@
             }
             .colored-circle {
                 margin-top: 25px;
+                margin-bottom: 28px;
                 width: 244px;
                 height: 244px;
                 border-radius: 50%;
-                border: 12px solid transparent;
-                background-size: 100% 100%, 40% 40%, 80% 100%, 100% 100%;
+                border: 17px solid transparent;
+                background-size: 100% 100%, 40% 40%, 70% 100%, 100% 100%;
                 background-repeat: no-repeat;
                 background-image: linear-gradient(white, white), 
                                     linear-gradient($secondary-color-6 100%, lightgrey 30%),
                                     linear-gradient( $secondary-color-5 100%, lightgrey 30%),
-                                    linear-gradient( $secondary-color-2 100%, lightgrey 30%);
+                                    linear-gradient($secondary-color-2 100%, lightgrey 30%);
                                     // linear-gradient(210deg, green 100%, lightgrey 30%);
-                background-position: center center, left top, right top, left bottom;
+                background-position: center center, left top, top right, left bottom;
                 background-origin: content-box, border-box, border-box, border-box;
                 background-clip: content-box, border-box, border-box, border-box;
                 transform: rotate(5deg);
+                @media screen and (min-width: 1288px) and (max-width: 1540px) { 
+                    width: 190px;
+                    height: 190px;
+                }
             }
-           
+            .all-desktop {
+                @include flex (space-between, stretch);
+               
+                .card-c-desc { margin-right: 23px; }
+                .health {
+                   
+                    h1 {color: $secondary-color-5;}
+                }
+                .IMD {
+                   
+                    h1 {color: $secondary-color-6;}
+                }
+                .others {h1{color: $secondary-color-2;}}
+                svg {margin-bottom: 9px;}
+                h6{
+                    
+                    margin-bottom: 8px;
+                }
+                h1 { font-size: 29px; }
+                margin-bottom: 65px;
+                @media screen and (min-width: 1288px) and (max-width: 1540px) { 
+                    h1 { font-size:24px; }
+                    .card-c-desc { margin-right: 10px; }
+                }
+            }
+            .card-c-footer {
+                @include flex (space-between, stretch);
+                padding-top: 10px;
+                border-top: 1px solid $primary-color-8;
+                .card-c-f {
+                    display: flex;
+                }
+                @media screen and (min-width: 1288px) and (max-width: 1540px) { 
+                        flex-wrap: wrap;
+                }
+                .top-users {color: $secondary-color-5;}
+                h5 {
+                    color: $primary-color-3;
+                    font-family: $primary-medium;
+                    margin-right: 9px;
+                }
+                svg {margin-top: 6px;}
+            }
         }
-        // .c1 {
-        //     width: 22%;
-        //     @include for-size (xl-down) {
-        //         width: 50%;
-        //     }
-        //     @include for-size (lg-down) {
-        //         width: 100%;
-        //     }
-        // }
-        // .c2 {
-        //     width: 75%;
-        //     @include for-size (xl-down) {
-        //         width: 100%;
-        //     }
-        //     @include for-size (lg-down) {
-        //         width: 100%;
-        //     }
-        // }
+        .all-pep-card {
+            width: 22%;
+            margin-top: 29px;
+            @include bg-card (24px, 24px, 24px, 24px);
+            .pep-header {
+                margin-bottom: 34px;
+                h4 {
+                    font-family: $primary-medium;
+                    color: $primary-color-3;
+                    margin-right: 39px;
+                    display: inline-block;
+                }
+                h6 {
+                    font-family: $primary-regular;
+                    display: inline-block;
+                }
+            }
+            .pep {
+                @include flex(space-between, center);
+                svg {margin-right: 35px;}
+                .pep-img-tit {
+                    @include flex (center, center);
+                }
+                .pep-title {
+                    display: inline-block;
+                    h4 {
+                        color: $primary-color-3;
+                        font-family: $primary-medium;
+                        margin-bottom: 4px;
+                    }
+                }
+                button {
+                    height: 30px;
+                    padding: 0;
+                    width: 5px;
+                    border: none;
+                    background-color: transparent;
+                    margin-right: 10px;
+                }
+                padding-bottom: 32px;
+                margin-top: 27px;
+                border-bottom: 1px solid $primary-color-8;
+             }
+            .all-pip-card-f {
+                 @include flex (flex-end, center);
+                 margin-top: 10px;
+                 h5 {
+                    font-family: $primary-medium;
+                    color: $secondary-color-5;
+                    margin-right: 9.9px;
+                }
+            }
+            @include for-size (xxl-down) {
+                width: 49%;
+            }
+            @include for-size (lg-down) {
+                width: 100%;
+            }
+        }
     }
+    // .all-peplines2 {
+    //     padding-bottom: 24px;
+    //     border-bottom: 1px solid $secondary-color-7;
+    // }
+    .pep-footer {
+       
+        margin: 24px 24px 54px 300px;
+        padding-left: 24px;
+        
+        @include for-size(xxl-down) {
+            margin-left: 0px;
+        }
+        h5 {
+            color: $secondary-color-8;
+            margin-bottom: 4px;
+            padding-top: 16px;
+            border-top: 1px solid $secondary-color-7;
+        }
+        h6 {color: $secondary-color-8}
+     }
 }
+
 
 
     

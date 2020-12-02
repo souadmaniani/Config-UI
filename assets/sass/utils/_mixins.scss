@@ -25,11 +25,21 @@
 		@media (max-width: $breakpoint-xl) {
 			@content;
 		}
-	} @else if $size == xl-up {
+	} @else if $size == xxl-down {
+		@media (max-width: $breakpoint-xxl) {
+			@content;
+		}
+	} @else if $size == xxl-up {
+		@media (min-width: $breakpoint-xxl) {
+			@content;
+		}
+	}
+	@else if $size == xl-up {
 		@media (min-width: $breakpoint-xl) {
 			@content;
 		}
 	}
+	
 }
 
 // Button Click Effect

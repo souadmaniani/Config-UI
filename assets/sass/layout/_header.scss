@@ -19,7 +19,7 @@
         padding: 10px 15px;
         border: none;
         visibility: hidden;
-        @include for-size (xl-down) {
+        @include for-size (xxl-down) {
             visibility: visible;
         }
       }
@@ -38,7 +38,7 @@
    .nav-icons {
         position: absolute;
         right:3%;
-        @include for-size (xl-down){
+        @include for-size (xxl-down){
             right:30%;
         }
         #exit-icon {

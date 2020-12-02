@@ -1,0 +1,65 @@
+.all-peplines {
+    margin-top: 22px;
+    width: 75%;
+    @include bg-card (16px, 27px, 22px, 24px);
+    @include for-size (xxl-down) {
+        width: 100%;
+    }
+    table {thead{th{border-bottom: none;border-top: none;}}} 
+    .header-table {
+        @include flex (space-between, center);
+        margin-bottom: 34px;
+    } 
+    h4 {
+        margin-right: 50px;
+        font-family: $primary-medium;
+        font-size: $size-1;
+        color: $primary-color-3;
+        display: inline-block ;
+    }
+    h6 {
+        font-family: $primary-regular;
+        font-size: $size;
+        
+        display: inline-block;
+       
+    }
+    h5 {display: inline-block;}
+    .sort-by{
+        font-family: $primary-medium;
+        color: $primary-color-3;
+        margin-right: 15px;
+    }
+    svg {
+        margin-right: 31px;
+    }
+    button {
+        padding: 0 18px 0;
+        height: 36px;
+        border: solid 1px #d4e6ff;
+    }
+    tr {
+        h5 {
+           font-family: $primary-regular;
+           color: $primary-color-3;
+        }
+        .pip-name {font-family: $primary-medium;}
+        svg {
+            margin: 6px 8px 6px 0;
+        }
+        td {
+            button {
+                height: 30px;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                margin-right: 30px;
+            }
+        } 
+    }
+    .table-footer {
+       .rows-per {margin-right: 45px;}
+       .number-pages {margin-right: 40px;}
+       button {width: 5px;}
+    }
+}

@@ -8,7 +8,8 @@
 // }
 
 aside {
-    visibility: visible;
+    left: 0px;
+    // visibility: visible;
     position: fixed;
     width: 300px;
     background-color: $white-color;
@@ -17,9 +18,9 @@ aside {
     border: 1px solid rgba(63, 63, 68, 0.005);
     box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
     z-index: 1031;
-    height: calc(100vh);
+    height: 67%;
     overflow: auto;
-    transition: visibility $duration-1 $timing-1;
+    transition: left $duration-1 $timing-1;
     .profil-img {
         display: flex;
         flex-direction: column;
@@ -71,11 +72,12 @@ aside {
             }
         }
     }
-    @include for-size (xl-down) {
-        visibility: hidden;
-        transition: visibility $duration-1 $timing-1;
+    @include for-size (xxl-down) {
+        left: -1000px;
+        // visibility: hidden;
+        transition: left $duration-1 $timing-1;
     }
-    @include for-size (xl-up) {
+    @include for-size (xxl-up) {
         margin-top: 64px !important;
     }
    
