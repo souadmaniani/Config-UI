@@ -24,7 +24,8 @@
 	<!-- <link rel="shortcut icon" href="./assets/img/logo/favicon.ico"> -->
 
 </head>
-<body class="ui-container">
+<body class="ui-container" >
+	<div id="bodyId">
 	<!-- [BEGIN] Navbar -->
 	<nav class="navbar navbar-expand-xl fixed-top" id="navId">
 		<a class="navbar-brand" href="#" >
@@ -932,6 +933,7 @@
 			<h6>Disclaimer: </h6>
 		</div>
 	</main>
+</div>
 	<!-- [END] Dash-container -->
 </body>
 
@@ -950,23 +952,30 @@
 	<script>
 			function manageNav() {
 				var x = document.getElementById("mySidepanel");
-				var y = document.getElementById("mainId");
+				var y = document.getElementById("bodyId");
+				var z = document.getElementById ("mainId");
 				var exist = false;
 
 				if (window.getComputedStyle(x).left === "0px") {
 					exist = true;
 				}
 				if (!exist) {
-					x.style.left = "0";
-					x.style.marginTop = "0";
+					x.style.left = "0px";
+					x.style.marginTop = "0px";
+					x.style.transition = "all 300ms ease-in-out";
 					y.style.backgroundColor = "black";
-					y.style.opacity = 0.9;
-					y.style.zIndex = 2;
+					y.style.zIndex = "-1";
+					z.style.opacity = "0.5";
+					z.style.transition = "all 300ms ease-in-out";
 					exist = true;
 					return 0;
 				}
 				if (exist) {
 					x.style.left = "-1000px";
+					x.style.transition = "all 300ms ease-in-out";
+					z.style.backgroundColor = "#F9FAFC";
+					z.style.transition = "all 300ms ease-in-out";
+					z.style.opacity = "1";
 					exist = false;
 					return 0;
 				}

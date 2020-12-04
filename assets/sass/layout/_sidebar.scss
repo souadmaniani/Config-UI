@@ -18,7 +18,7 @@ aside {
     border: 1px solid rgba(63, 63, 68, 0.005);
     box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
     z-index: 1031;
-    height: 67%;
+    height: 100%;
     overflow: auto;
     transition: left $duration-1 $timing-1;
     .profil-img {
@@ -52,11 +52,14 @@ aside {
             padding: 0px 0px 37px 24px;
             text-decoration: none;
             &:hover {
+                text-decoration: none;
                 h5 {color: $primary-color-5;} 
-            }
-            &:hover {
                 rect {fill: $primary-color-5;}
             }
+            &.focus {
+                
+            }
+
         }
         h5 {
             display: inline;
@@ -75,10 +78,12 @@ aside {
     @include for-size (xxl-down) {
         left: -1000px;
         // visibility: hidden;
-        transition: left $duration-1 $timing-1;
+        transition: left 2ms $timing-1;
     }
     @include for-size (xxl-up) {
         margin-top: 64px !important;
+        left: 0px !important;
+        transition: left 2ms $timing-1 !important;
     }
    
 }

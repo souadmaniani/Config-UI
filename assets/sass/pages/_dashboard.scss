@@ -1,6 +1,10 @@
 .ui-container {
     position: relative;
     background-color: $primary-color-10;
+    
+    main {
+            position: relative;
+            background-color: $primary-color-10;
     .cards-container {
         margin-left: 300px;
         padding-left: 24px;
@@ -262,8 +266,9 @@
     // }
     .pep-footer {
        
-        margin: 24px 24px 54px 300px;
+        margin: 24px 24px 0px 300px;
         padding-left: 24px;
+        padding-bottom: 54px;
         
         @include for-size(xxl-down) {
             margin-left: 0px;
@@ -274,8 +279,9 @@
             padding-top: 16px;
             border-top: 1px solid $secondary-color-7;
         }
-        h6 {color: $secondary-color-8}
+        h6 {color: $secondary-color-9}
      }
+    }
 }
 
 

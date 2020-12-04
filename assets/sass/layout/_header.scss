@@ -13,7 +13,6 @@
     //  } 
     .openbtn {
         font-size: 20px;
-        cursor: pointer;
         background-color: $secondary-color-1;
         color: white;
         padding: 10px 15px;
@@ -22,6 +21,7 @@
         @include for-size (xxl-down) {
             visibility: visible;
         }
+        @include ripple-effect;
       }
      
     .navbar-brand {
