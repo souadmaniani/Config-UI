@@ -505,8 +505,15 @@
 						</button>
 					</div>
 					<div class="card-c-body">
-						<div class="colored-circle">
-						</div>
+						<!-- <div class="colored-circle"></div> -->
+						<svg viewbox="0 0 10 10">
+							<defs>
+							  <circle id="circle" cx="5" cy="5" r="4" stroke-width="0.8" fill="transparent" />
+							</defs>
+							<use xlink:href="#circle" stroke="pink" stroke-dasharray= "0, 2.09, 8.38, 30" />
+							<use xlink:href="#circle" stroke="green" stroke-dasharray= "0, 10.47, 8.38, 30" />
+							<use xlink:href="#circle" stroke="orange" stroke-dasharray= "2.09, 16.75, 6.3" />
+						</svg>
 						<div class="all-desktop">
 							<div class="health card-c-desc">
 								<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -131,32 +131,35 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }
-            .colored-circle {
-                // $secondary-color-6: #f7d154;
+
+                &svg{width:244px;height:244px;}
+            // .colored-circle {
+                // $secondary-color-6
                 // $secondary-color-2
                 // $secondary-color-5
-                margin-top: 25px;
-                margin-bottom: 28px;
-                width: 244px;
-                height: 244px;
+                // position: relative;
+                // margin-top: 25px;
+                // margin-bottom: 28px;
+                // width: 244px;
+                // height: 244px;
                 // border-radius: 50%;
-                border: 20px solid transparent;
-                background-size: 100% 100%, 15% 50%, 60% 50%, 63% 100%;
-                background-repeat: no-repeat;
-                background-image: linear-gradient(white, white),  
-                                    linear-gradient(yellow 100%, lightgrey 30%),
-                                    linear-gradient( red 100%, lightgrey 30%),
-                                    linear-gradient(blue 100%, lightgrey 30%);
-                background-position: center center, top left, left bottom, bottom right;
-                background-origin: content-box, border-box, border-box, border-box;
-                background-clip: content-box, border-box, border-box, border-box;
-                // transform: rotate(12deg);
-                @media screen and (min-width: 1288px) and (max-width: 1540px) { 
-                    width: 190px;
-                    height: 190px;
-                }
-            }
+                // border: 20px solid transparent;
+                // background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+                // background-repeat: no-repeat;
+                // background-image: linear-gradient(white, white), 
+                //                     linear-gradient(30deg, $secondary-color-2 36%, $secondary-color-6 30%),
+                //                     linear-gradient(120deg, $secondary-color-5 36%, $secondary-color-5 30%),
+                //                     linear-gradient(300deg, $secondary-color-5 36%, $secondary-color-2 30%),
+                //                     linear-gradient(210deg, $secondary-color-5 36%, $secondary-color-5 30%);
+                // background-position: center center, left top, right top, left bottom, right bottom;
+                // background-origin: content-box, border-box, border-box, border-box, border-box;
+                // background-clip: content-box, border-box, border-box, border-box, border-box;
+                // transform: rotate(30deg);
+                // @media screen and (min-width: 1288px) and (max-width: 1540px) { 
+                //     width: 190px;
+                //     height: 190px;
+                // }
+            // }
             .all-desktop {
                 @include flex (space-between, stretch);
                
@@ -180,6 +183,7 @@
                 @media screen and (min-width: 1288px) and (max-width: 1540px) { 
                     h1 { font-size:24px; }
                     .card-c-desc { margin-right: 10px; }
+                    }
                 }
             }
             .card-c-footer {
