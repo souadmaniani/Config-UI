@@ -131,35 +131,29 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-
-                &svg{width:244px;height:244px;}
-            // .colored-circle {
-                // $secondary-color-6
-                // $secondary-color-2
-                // $secondary-color-5
-                // position: relative;
-                // margin-top: 25px;
-                // margin-bottom: 28px;
-                // width: 244px;
-                // height: 244px;
-                // border-radius: 50%;
-                // border: 20px solid transparent;
-                // background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
-                // background-repeat: no-repeat;
-                // background-image: linear-gradient(white, white), 
-                //                     linear-gradient(30deg, $secondary-color-2 36%, $secondary-color-6 30%),
-                //                     linear-gradient(120deg, $secondary-color-5 36%, $secondary-color-5 30%),
-                //                     linear-gradient(300deg, $secondary-color-5 36%, $secondary-color-2 30%),
-                //                     linear-gradient(210deg, $secondary-color-5 36%, $secondary-color-5 30%);
-                // background-position: center center, left top, right top, left bottom, right bottom;
-                // background-origin: content-box, border-box, border-box, border-box, border-box;
-                // background-clip: content-box, border-box, border-box, border-box, border-box;
-                // transform: rotate(30deg);
-                // @media screen and (min-width: 1288px) and (max-width: 1540px) { 
-                //     width: 190px;
-                //     height: 190px;
-                // }
-            // }
+            .colored-circle {
+                position: relative;
+                margin-top: 25px;
+                margin-bottom: 28px;
+                width: 244px;
+                height: 244px;
+                border-radius: 50%;
+                border: 20px solid transparent;
+                background-size: 100% 100%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+                background-repeat: no-repeat;
+                background-image: linear-gradient(white, white), 
+                                    linear-gradient(30deg, $secondary-color-2 36%, $secondary-color-6 30%),
+                                    linear-gradient(120deg, $secondary-color-5 36%, $secondary-color-5 30%),
+                                    linear-gradient(300deg, $secondary-color-5 36%, $secondary-color-2 30%),
+                                    linear-gradient(210deg, $secondary-color-5 36%, $secondary-color-5 30%);
+                background-position: center center, left top, right top, left bottom, right bottom;
+                background-origin: content-box, border-box, border-box, border-box, border-box;
+                background-clip: content-box, border-box, border-box, border-box, border-box;
+                @media screen and (min-width: 1288px) and (max-width: 1590px) { 
+                    width: 190px;
+                    height: 190px;
+                }
+            }
             .all-desktop {
                 @include flex (space-between, stretch);
                
@@ -270,22 +264,21 @@
     //     border-bottom: 1px solid $secondary-color-7;
     // }
     .pep-footer {
-       
-        margin: 24px 24px 0px 300px;
-        padding-left: 24px;
-        padding-bottom: 54px;
-        
-        @include for-size(xxl-down) {
-            margin-left: 0px;
+            margin: 24px 24px 0px 300px;
+            padding-left: 24px;
+            padding-bottom: 54px;
+            
+            @include for-size(xxl-down) {
+                margin-left: 0px;
+            }
+            h5 {
+                color: $secondary-color-8;
+                margin-bottom: 4px;
+                padding-top: 16px;
+                border-top: 1px solid $secondary-color-7;
+            }
+            h6 {color: $secondary-color-9}
         }
-        h5 {
-            color: $secondary-color-8;
-            margin-bottom: 4px;
-            padding-top: 16px;
-            border-top: 1px solid $secondary-color-7;
-        }
-        h6 {color: $secondary-color-9}
-     }
     }
 }
 
