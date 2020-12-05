@@ -1,7 +1,6 @@
 .ui-container {
     position: relative;
     background-color: $primary-color-10;
-    
     main {
             position: relative;
             background-color: $primary-color-10;
@@ -134,23 +133,25 @@
                 align-items: center;
             }
             .colored-circle {
+                // $secondary-color-6: #f7d154;
+                // $secondary-color-2
+                // $secondary-color-5
                 margin-top: 25px;
                 margin-bottom: 28px;
                 width: 244px;
                 height: 244px;
-                border-radius: 50%;
-                border: 17px solid transparent;
-                background-size: 100% 100%, 40% 40%, 70% 100%, 100% 100%;
+                // border-radius: 50%;
+                border: 20px solid transparent;
+                background-size: 100% 100%, 15% 50%, 60% 50%, 63% 100%;
                 background-repeat: no-repeat;
-                background-image: linear-gradient(white, white), 
-                                    linear-gradient($secondary-color-6 100%, lightgrey 30%),
-                                    linear-gradient( $secondary-color-5 100%, lightgrey 30%),
-                                    linear-gradient($secondary-color-2 100%, lightgrey 30%);
-                                    // linear-gradient(210deg, green 100%, lightgrey 30%);
-                background-position: center center, left top, top right, left bottom;
+                background-image: linear-gradient(white, white),  
+                                    linear-gradient(yellow 100%, lightgrey 30%),
+                                    linear-gradient( red 100%, lightgrey 30%),
+                                    linear-gradient(blue 100%, lightgrey 30%);
+                background-position: center center, top left, left bottom, bottom right;
                 background-origin: content-box, border-box, border-box, border-box;
                 background-clip: content-box, border-box, border-box, border-box;
-                transform: rotate(5deg);
+                // transform: rotate(12deg);
                 @media screen and (min-width: 1288px) and (max-width: 1540px) { 
                     width: 190px;
                     height: 190px;

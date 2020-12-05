@@ -26,670 +26,233 @@
 </head>
 <body class="ui-container" >
 	<div id="bodyId">
-	<!-- [BEGIN] Navbar -->
-	<nav class="navbar navbar-expand-xl fixed-top" id="navId">
-		<a class="navbar-brand" href="#" >
-			<img src="../assets/img/profil/logo.svg" alt="UI Config">
-			<h2>Config UI</h2>
-		</a>
-		<button class="openbtn" 
-				onclick="manageNav()">☰ 
-		</button>
-		<div class="nav-icons">
-			<a href="#" id="notif-icon">
-				<svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="21">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3854 14.002V8.99949C14.3854 5.92795 12.7546 3.35667 9.88317 2.67633V1.99599C9.88317 1.16557 9.21283 0.495239 8.38242 0.495239C7.552 0.495239 6.88167 1.16557 6.88167 1.99599V2.67633C4.02024 3.35667 2.37942 5.91795 2.37942 8.99949V14.002L0.378418 16.003V17.0035H16.3864V16.003L14.3854 14.002ZM8.38242 20.005C9.48297 20.005 10.3834 19.1045 10.3834 18.004H6.38142C6.38142 19.1045 7.28187 20.005 8.38242 20.005ZM4.38042 15.0025H12.3844V8.99949C12.3844 6.51825 10.8737 4.49724 8.38242 4.49724C5.89117 4.49724 4.38042 6.51825 4.38042 8.99949V15.0025Z" fill="white"/>
-					</mask>
-					<g mask="url(#mask0)">
-						<rect x="-4.00024" y="-2" width="24" height="24" fill="white"/>
-					</g>
-				</svg>
+		<!-- [BEGIN] Navbar -->
+		<nav class="navbar navbar-expand-xl fixed-top" id="navId">
+			<a class="navbar-brand" href="#" >
+				<img src="../assets/img/profil/logo.svg" alt="UI Config">
+				<h2>Config UI</h2>
 			</a>
-			<a href="#" id="exit-icon">
-				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M2.47302 0.521576H17.2172C18.3757 0.521576 19.3235 1.46942 19.3235 2.62789V17.3721C19.3235 18.5306 18.3757 19.4784 17.2172 19.4784H2.47302C1.30401 19.4784 0.366699 18.5306 0.366699 17.3721V13.1595H2.47302V17.3721H17.2172V2.62789H2.47302V6.84052H0.366699V2.62789C0.366699 1.46942 1.30401 0.521576 2.47302 0.521576ZM9.31854 15.2658L7.83359 13.7808L10.5507 11.0532H0.366699V8.94684H10.5507L7.83359 6.21916L9.31854 4.73421L14.5843 10L9.31854 15.2658Z" fill="white"/>
-					</mask>
-					<g mask="url(#mask1)">
-						<rect x="-2" y="-2" width="24" height="24" fill="white"/>
-					</g>
-				</svg>
-			</a>
-		</div>
-	</nav>
-	<!-- [END] Navbar -->
-	<!-- [BEGIN] Menu -->
-	<aside class= "menu sidepanel" id="mySidepanel">
-		<!-- <a class="closebtn" onclick="closeNav()">×</a> -->
-		<div class="profil-img" id="profilId">
-			<img src="./assets/img/profil/pic-profil.svg" alt="">
-			<h4>Roman Kutepov</h4>
-			<h6>Brain Director</h6>
-		</div>
-		<nav class="nav flex-column" id="navId">
-			<a class="brand" href="#">
-				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M0.800293 0.521606H9.22556V11.0532H0.800293V0.521606ZM19.7571 0.521606H11.3319V6.84055H19.7571V0.521606ZM7.11924 8.94687V2.62792H2.90661V8.94687H7.11924ZM17.6508 4.73424V2.62792H13.4382V4.73424H17.6508ZM17.6508 11.0532V17.3721H13.4382V11.0532H17.6508ZM7.11924 17.3721V15.2658H2.90661V17.3721H7.11924ZM19.7571 8.94687H11.3319V19.4784H19.7571V8.94687ZM0.800293 13.1595H9.22556V19.4784H0.800293V13.1595Z" fill="white"/>
-					</mask>
-					<g mask="url(#mask2)">
-						<rect x="-2" y="-2" width="24" height="24" fill="#66788A"/>
-					</g>
-				</svg>	
-				<h5>Pipeline Dashboard</h5>
-			</a>
-			<a class="brand" href="#">
-				<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<mask id="mask3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="14">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M7.11336 7.00002C8.95237 7.00002 10.4484 5.50403 10.4484 3.66502C10.4484 1.826 8.95237 0.330017 7.11336 0.330017C5.27435 0.330017 3.77836 1.826 3.77836 3.66502C3.77836 5.50403 5.27435 7.00002 7.11336 7.00002ZM0.443359 12.0025C0.443359 9.78236 4.88367 8.66752 7.11336 8.66752C9.34305 8.66752 13.7834 9.78236 13.7834 12.0025V13.67H0.443359V12.0025ZM7.11336 10.5732C5.40775 10.5732 3.47345 11.2116 2.67305 11.7643H11.5537C10.7533 11.2116 8.81897 10.5732 7.11336 10.5732ZM8.54264 3.66502C8.54264 2.87415 7.90423 2.23573 7.11336 2.23573C6.32249 2.23573 5.68407 2.87415 5.68407 3.66502C5.68407 4.45589 6.32249 5.0943 7.11336 5.0943C7.90423 5.0943 8.54264 4.45589 8.54264 3.66502ZM13.8215 8.72469C14.9268 9.52509 15.6891 10.5923 15.6891 12.0025V13.67H19.5005V12.0025C19.5005 10.0777 16.1655 8.98196 13.8215 8.72469ZM16.1655 3.66502C16.1655 5.50403 14.6695 7.00002 12.8305 7.00002C12.316 7.00002 11.8395 6.87615 11.4012 6.66652C12.0015 5.81847 12.3541 4.77986 12.3541 3.66502C12.3541 2.55017 12.0015 1.51156 11.4012 0.663517C11.8395 0.453889 12.316 0.330017 12.8305 0.330017C14.6695 0.330017 16.1655 1.826 16.1655 3.66502Z" fill="white"/>
-					</mask>
-					<g mask="url(#mask3)">
-						<rect x="-2" y="-5" width="24" height="24" fill="#66788A"/>
-					</g>
-				</svg>
-				<h5>Users</h5>
-			</a>
-			<a class="brand" href="#">
-				<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<mask id="mask4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="18">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3024 6.82498H18.4697C18.9482 6.82498 19.3397 7.21648 19.3397 7.69498L19.3136 7.92988L17.1038 15.9948C16.895 16.7256 16.2251 17.265 15.4247 17.265H4.11471C3.31431 17.265 2.64441 16.7256 2.44431 15.9948L0.234507 7.92988C0.208407 7.85158 0.199707 7.77328 0.199707 7.69498C0.199707 7.21648 0.591207 6.82498 1.06971 6.82498H5.23701L9.04761 1.12648C9.21291 0.87418 9.49131 0.75238 9.76971 0.75238C10.0481 0.75238 10.3265 0.87418 10.4918 1.11778L14.3024 6.82498ZM12.2057 6.82498L9.76971 3.17098L7.33371 6.82498H12.2057ZM15.4247 15.525L4.12341 15.5337L2.20941 8.56498H17.3387L15.4247 15.525ZM8.02971 12.045C8.02971 11.088 8.81271 10.305 9.76971 10.305C10.7267 10.305 11.5097 11.088 11.5097 12.045C11.5097 13.002 10.7267 13.785 9.76971 13.785C8.81271 13.785 8.02971 13.002 8.02971 12.045Z" fill="white"/>
-					</mask>
-					<g mask="url(#mask4)">
-						<rect x="-2" y="-3" width="24" height="24" fill="#66788A"/>
-					</g>
-				</svg>
-				<h5>Logs</h5>
-			</a>
-			<a class="brand" href="#">
-				<svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<mask id="mask5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="22">
-					<path fill-rule="evenodd" clip-rule="evenodd" d="M14.1374 7.665H13.1845V5.75928C13.1845 3.1294 11.0501 0.994995 8.42022 0.994995C5.79033 0.994995 3.65593 3.1294 3.65593 5.75928H5.56165C5.56165 4.17754 6.83848 2.90071 8.42022 2.90071C10.002 2.90071 11.2788 4.17754 11.2788 5.75928V7.665H2.70308C1.65493 7.665 0.797363 8.52257 0.797363 9.57071V19.0993C0.797363 20.1474 1.65493 21.005 2.70308 21.005H14.1374C15.1855 21.005 16.0431 20.1474 16.0431 19.0993V9.57071C16.0431 8.52257 15.1855 7.665 14.1374 7.665ZM2.70308 19.0993V9.57071H14.1374V19.0993H2.70308ZM10.3259 14.335C10.3259 15.3831 9.46836 16.2407 8.42022 16.2407C7.37208 16.2407 6.51451 15.3831 6.51451 14.335C6.51451 13.2869 7.37208 12.4293 8.42022 12.4293C9.46836 12.4293 10.3259 13.2869 10.3259 14.335Z" fill="white"/>
-					</mask>
-					<g mask="url(#mask5)">
-						<rect x="-4" y="-1" width="24" height="24" fill="#66788A"/>
-					</g>
-				</svg>	
-				<h5>Authentication</h5>
-			</a>
-			<div class="support">
-				<h6>Support</h6>
-				<a class="brand" href="#">
-					<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<mask id="mask6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="21">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M8.56486 17.5163V20.6483L9.80896 20.048C14.2721 17.8991 17.2649 13.5665 17.2649 9.26C17.2649 4.7012 13.5587 0.994995 8.99986 0.994995C4.44106 0.994995 0.734863 4.7012 0.734863 9.26C0.734863 13.6709 4.20616 17.2901 8.56486 17.5163ZM2.47486 9.26C2.47486 5.6582 5.39806 2.735 8.99986 2.735C12.6017 2.735 15.5249 5.6582 15.5249 9.26C15.5249 12.4964 13.4717 15.785 10.3049 17.786V15.785H8.99986C5.39806 15.785 2.47486 12.8618 2.47486 9.26ZM9.86986 12.74V14.48H8.12986V12.74H9.86986ZM9.67015 8.66985C8.94951 9.22223 8.12986 9.85049 8.12986 11.435H9.86986C9.86986 10.482 10.4885 9.94143 11.1233 9.38661C11.7925 8.80178 12.4799 8.20113 12.4799 7.085C12.4799 5.16229 10.9226 3.605 8.99986 3.605C7.07716 3.605 5.51986 5.16229 5.51986 7.085H7.25986C7.25986 6.128 8.04286 5.345 8.99986 5.345C9.95686 5.345 10.7399 6.128 10.7399 7.085C10.7399 7.84991 10.2355 8.23653 9.67015 8.66985Z" fill="white"/>
+			<button class="openbutton" 
+					onclick="manageNav()">☰ 
+			</button>
+			<div class="nav-icons">
+				<a href="#" id="notif-icon">
+					<svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="21">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3854 14.002V8.99949C14.3854 5.92795 12.7546 3.35667 9.88317 2.67633V1.99599C9.88317 1.16557 9.21283 0.495239 8.38242 0.495239C7.552 0.495239 6.88167 1.16557 6.88167 1.99599V2.67633C4.02024 3.35667 2.37942 5.91795 2.37942 8.99949V14.002L0.378418 16.003V17.0035H16.3864V16.003L14.3854 14.002ZM8.38242 20.005C9.48297 20.005 10.3834 19.1045 10.3834 18.004H6.38142C6.38142 19.1045 7.28187 20.005 8.38242 20.005ZM4.38042 15.0025H12.3844V8.99949C12.3844 6.51825 10.8737 4.49724 8.38242 4.49724C5.89117 4.49724 4.38042 6.51825 4.38042 8.99949V15.0025Z" fill="white"/>
 						</mask>
-						<g mask="url(#mask6)">
-						<rect x="-3" y="-1" width="24" height="24" fill="#66788A"/>
+						<g mask="url(#mask0)">
+							<rect x="-4.00024" y="-2" width="24" height="24" fill="white"/>
 						</g>
 					</svg>
-					<h5>Support</h5>
+				</a>
+				<a href="#" id="exit-icon">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M2.47302 0.521576H17.2172C18.3757 0.521576 19.3235 1.46942 19.3235 2.62789V17.3721C19.3235 18.5306 18.3757 19.4784 17.2172 19.4784H2.47302C1.30401 19.4784 0.366699 18.5306 0.366699 17.3721V13.1595H2.47302V17.3721H17.2172V2.62789H2.47302V6.84052H0.366699V2.62789C0.366699 1.46942 1.30401 0.521576 2.47302 0.521576ZM9.31854 15.2658L7.83359 13.7808L10.5507 11.0532H0.366699V8.94684H10.5507L7.83359 6.21916L9.31854 4.73421L14.5843 10L9.31854 15.2658Z" fill="white"/>
+						</mask>
+						<g mask="url(#mask1)">
+							<rect x="-2" y="-2" width="24" height="24" fill="white"/>
+						</g>
+					</svg>
 				</a>
 			</div>
 		</nav>
-	</aside>
-	<!-- [END] Menu -->
-	<!-- [BEGIN] Dash-container -->
-	<main id="mainId">
-		<!-- [BEGIN] cards-container -->
-		<div class="cards-container">
-			<div class="my-card card1">
-				<div class="card-up">
-					<div>
-						<h6>TOTAL PIPELINES</h6>
-						<h1>24</h1>
-					</div>
-					<div class="oval1 oval">
-						<svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="mask7" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="26">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5376 5.85356H28.8305V25.8636H0.244751V0.136414H14.5376V5.85356ZM3.10332 23.005H5.96189V20.1464H3.10332V23.005ZM5.96189 17.2878H3.10332V14.4293H5.96189V17.2878ZM3.10332 11.5707H5.96189V8.71213H3.10332V11.5707ZM5.96189 5.85356H3.10332V2.99499H5.96189V5.85356ZM8.82047 23.005H11.679V20.1464H8.82047V23.005ZM11.679 17.2878H8.82047V14.4293H11.679V17.2878ZM8.82047 11.5707H11.679V8.71213H8.82047V11.5707ZM11.679 5.85356H8.82047V2.99499H11.679V5.85356ZM25.9719 23.005V8.71213H14.5376V11.5707H17.3962V14.4293H14.5376V17.2878H17.3962V20.1464H14.5376V23.005H25.9719ZM23.1133 11.5707H20.2548V14.4293H23.1133V11.5707ZM20.2548 17.2878H23.1133V20.1464H20.2548V17.2878Z" fill="white"/>
-							</mask>
-							<g mask="url(#mask7)">
-								<rect x="-3" y="-5" width="36" height="36" fill="white"/>
-							</g>
-						</svg>
-					</div>
-				</div>
-				<div class="group">
-					<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M10 5L5 0L0 5L10 5Z" fill="#47B881"/>
-						<mask id="drop-down1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-						<path d="M10 5L5 0L0 5L10 5Z" fill="white"/>
+		<!-- [END] Navbar -->
+		<!-- [BEGIN] Menu -->
+		<aside class= "menu sidepanel" id="mySidepanel">
+			<!-- <a class="closebtn" onclick="closeNav()">×</a> -->
+			<div class="profil-img" id="profilId">
+				<img src="./assets/img/profil/pic-profil.svg" alt="">
+				<h4>Roman Kutepov</h4>
+				<h6>Brain Director</h6>
+			</div>
+			<nav class="nav flex-column">
+				<a class="brand" href="#">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M0.800293 0.521606H9.22556V11.0532H0.800293V0.521606ZM19.7571 0.521606H11.3319V6.84055H19.7571V0.521606ZM7.11924 8.94687V2.62792H2.90661V8.94687H7.11924ZM17.6508 4.73424V2.62792H13.4382V4.73424H17.6508ZM17.6508 11.0532V17.3721H13.4382V11.0532H17.6508ZM7.11924 17.3721V15.2658H2.90661V17.3721H7.11924ZM19.7571 8.94687H11.3319V19.4784H19.7571V8.94687ZM0.800293 13.1595H9.22556V19.4784H0.800293V13.1595Z" fill="white"/>
 						</mask>
-						<g mask="url(#drop-down1)">
-						<rect x="17" y="15" width="24" height="24" transform="rotate(-180 17 15)" fill="#47B881"/>
+						<g mask="url(#mask2)">
+							<rect x="-2" y="-2" width="24" height="24" fill="#66788A"/>
+						</g>
+					</svg>	
+					<h5>Pipeline Dashboard</h5>
+				</a>
+				<a class="brand" href="#">
+					<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="14">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M7.11336 7.00002C8.95237 7.00002 10.4484 5.50403 10.4484 3.66502C10.4484 1.826 8.95237 0.330017 7.11336 0.330017C5.27435 0.330017 3.77836 1.826 3.77836 3.66502C3.77836 5.50403 5.27435 7.00002 7.11336 7.00002ZM0.443359 12.0025C0.443359 9.78236 4.88367 8.66752 7.11336 8.66752C9.34305 8.66752 13.7834 9.78236 13.7834 12.0025V13.67H0.443359V12.0025ZM7.11336 10.5732C5.40775 10.5732 3.47345 11.2116 2.67305 11.7643H11.5537C10.7533 11.2116 8.81897 10.5732 7.11336 10.5732ZM8.54264 3.66502C8.54264 2.87415 7.90423 2.23573 7.11336 2.23573C6.32249 2.23573 5.68407 2.87415 5.68407 3.66502C5.68407 4.45589 6.32249 5.0943 7.11336 5.0943C7.90423 5.0943 8.54264 4.45589 8.54264 3.66502ZM13.8215 8.72469C14.9268 9.52509 15.6891 10.5923 15.6891 12.0025V13.67H19.5005V12.0025C19.5005 10.0777 16.1655 8.98196 13.8215 8.72469ZM16.1655 3.66502C16.1655 5.50403 14.6695 7.00002 12.8305 7.00002C12.316 7.00002 11.8395 6.87615 11.4012 6.66652C12.0015 5.81847 12.3541 4.77986 12.3541 3.66502C12.3541 2.55017 12.0015 1.51156 11.4012 0.663517C11.8395 0.453889 12.316 0.330017 12.8305 0.330017C14.6695 0.330017 16.1655 1.826 16.1655 3.66502Z" fill="white"/>
+						</mask>
+						<g mask="url(#mask3)">
+							<rect x="-2" y="-5" width="24" height="24" fill="#66788A"/>
 						</g>
 					</svg>
-					<h6 class="prc1">16%</h6>
-					<h6>Since last month</h6>
-				</div>
-			</div>
-			<div class="my-card">
-				<div class="card-up">
-					<div>
-						<h6>DATA VOLUME</h6>
-						<h1>16,000 records </h1>
-					</div>
-					<div class="oval2 oval">
-						<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="mask8" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="29">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7003 0.00680542C6.81067 0.00680542 0.407471 6.41001 0.407471 14.2997C0.407471 22.1893 6.81067 28.5925 14.7003 28.5925C22.59 28.5925 28.9932 22.1893 28.9932 14.2997C28.9932 6.41001 22.59 0.00680542 14.7003 0.00680542ZM15.4293 11.4268C15.4293 9.06848 13.4997 7.13894 11.1414 7.13894C8.78308 7.13894 6.85355 9.06848 6.85355 11.4268C6.85355 13.7851 8.78308 15.7147 11.1414 15.7147C13.4997 15.7147 15.4293 13.7851 15.4293 11.4268ZM11.1414 12.8561C10.3553 12.8561 9.71212 12.2129 9.71212 11.4268C9.71212 10.6407 10.3553 9.99751 11.1414 9.99751C11.9275 9.99751 12.5707 10.6407 12.5707 11.4268C12.5707 12.2129 11.9275 12.8561 11.1414 12.8561ZM23.2903 12.8561C23.2903 14.4426 22.0183 15.7147 20.4318 15.7147C18.8453 15.7147 17.5732 14.4426 17.5732 12.8561C17.5589 11.2696 18.8453 9.99751 20.4318 9.99751C22.0183 9.99751 23.2903 11.2696 23.2903 12.8561ZM11.1414 20.0168C9.1547 20.0168 6.88214 20.8315 5.91022 21.6033C7.86834 23.9616 10.7555 25.5053 14 25.6911V21.7177C14 19.0163 18.2593 17.8586 20.4318 17.8586C21.6895 17.8586 23.6334 18.2588 25.0627 19.1021C25.7487 17.6299 26.1346 16.0005 26.1346 14.2854C26.1346 7.98222 21.0035 2.85108 14.7003 2.85108C8.39718 2.85108 3.26604 7.98222 3.26604 14.2854C3.26604 16.0434 3.66624 17.7014 4.38089 19.1878C6.29613 17.7871 9.28333 17.1439 11.1414 17.1439C11.7703 17.1439 12.5278 17.2297 13.3282 17.3726C12.4278 18.1873 11.8132 19.1164 11.4701 20.0311C11.4111 20.0311 11.352 20.0273 11.2949 20.0236C11.2415 20.0201 11.1898 20.0168 11.1414 20.0168Z" fill="white"/>
-							</mask>
-							<g mask="url(#mask8)">
-								<rect x="-4" y="-3" width="36" height="36" fill="white"/>
-							</g>
-						</svg>	
-					</div>
-				</div>
-				<div class="group">
-					<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<mask id="drop-down2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-						<path d="M0 0L5 5L10 0H0Z" fill="white"/>
+					<h5>Users</h5>
+				</a>
+				<a class="brand" href="#">
+					<svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="18">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.3024 6.82498H18.4697C18.9482 6.82498 19.3397 7.21648 19.3397 7.69498L19.3136 7.92988L17.1038 15.9948C16.895 16.7256 16.2251 17.265 15.4247 17.265H4.11471C3.31431 17.265 2.64441 16.7256 2.44431 15.9948L0.234507 7.92988C0.208407 7.85158 0.199707 7.77328 0.199707 7.69498C0.199707 7.21648 0.591207 6.82498 1.06971 6.82498H5.23701L9.04761 1.12648C9.21291 0.87418 9.49131 0.75238 9.76971 0.75238C10.0481 0.75238 10.3265 0.87418 10.4918 1.11778L14.3024 6.82498ZM12.2057 6.82498L9.76971 3.17098L7.33371 6.82498H12.2057ZM15.4247 15.525L4.12341 15.5337L2.20941 8.56498H17.3387L15.4247 15.525ZM8.02971 12.045C8.02971 11.088 8.81271 10.305 9.76971 10.305C10.7267 10.305 11.5097 11.088 11.5097 12.045C11.5097 13.002 10.7267 13.785 9.76971 13.785C8.81271 13.785 8.02971 13.002 8.02971 12.045Z" fill="white"/>
 						</mask>
-						<g mask="url(#drop-down2)">
-						<rect x="-7" y="-10" width="24" height="24" fill="#EC4C47"/>
+						<g mask="url(#mask4)">
+							<rect x="-2" y="-3" width="24" height="24" fill="#66788A"/>
 						</g>
 					</svg>
-					<h6 class="prc2">12%</h6>
-					<h6>Since last month</h6>
-				</div>
-			</div>
-			<div class="my-card card3">
-				<div class="card-up">
-					<div>
-						<h6>DATA LOAD SUCCESS RATE</h6>
-						<h1>95% </h1>
-					</div>
-					<div class="oval3 oval">
-						<svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="mask9" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="20">
-							<path d="M2.31348 19.2761L10.8892 10.6861L16.6063 16.4032L28.7553 2.73923L26.74 0.723938L16.6063 12.1153L10.8892 6.3982L0.169556 17.1321L2.31348 19.2761Z" fill="white"/>
-							</mask>
-							<g mask="url(#mask9)">
-								<rect x="-4" y="-8" width="36" height="36" fill="white"/>
-							</g>
-						</svg>
-					</div>
-				</div>
-				<div class="card3-rect">
-					<div class="card3-rect-small"></div>
-				</div>
-			</div>
-			<div class="my-card card4">
-				<div class="card-up">
-					<div>
-						<h6>TOTAL DATA PROCESSED</h6>
-						<h1>23,200 GB</h1>
-					</div>
-					<div class="oval">
-						<svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="mask10" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="48" height="40">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.26776 0.942871V39.0572H51.9106V0.942871H4.26776ZM16.1785 10.4714H11.4142V29.5286H16.1785V10.4714ZM28.0892 29.5286H20.9428C19.6326 29.5286 18.5606 28.4566 18.5606 27.1464V12.8536C18.5606 11.5434 19.6326 10.4714 20.9428 10.4714H28.0892C29.3994 10.4714 30.4713 11.5434 30.4713 12.8536V27.1464C30.4713 28.4566 29.3994 29.5286 28.0892 29.5286ZM35.2356 29.5286H42.382C43.6922 29.5286 44.7642 28.4566 44.7642 27.1464V12.8536C44.7642 11.5434 43.6922 10.4714 42.382 10.4714H35.2356C33.9254 10.4714 32.8535 11.5434 32.8535 12.8536V27.1464C32.8535 28.4566 33.9254 29.5286 35.2356 29.5286ZM37.6178 15.2357H39.9999V24.7643H37.6178V15.2357ZM23.3249 15.2357H25.707V24.7643H23.3249V15.2357ZM9.03205 34.2929H47.1463V5.70716H9.03205V34.2929Z" fill="white"/>
-							</mask>
-							<g mask="url(#mask10)">
-							<rect x="-1" y="-10" width="60" height="60" fill="white"/>
-							</g>
-						</svg>
-					</div>
-				</div>
-				<div class="group">
-					<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M10 5L5 0L0 5L10 5Z" fill="#47B881"/>
-						<mask id="drop-down3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
-						<path d="M10 5L5 0L0 5L10 5Z" fill="white"/>
+					<h5>Logs</h5>
+				</a>
+				<a class="brand" href="#">
+					<svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="mask5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="22">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M14.1374 7.665H13.1845V5.75928C13.1845 3.1294 11.0501 0.994995 8.42022 0.994995C5.79033 0.994995 3.65593 3.1294 3.65593 5.75928H5.56165C5.56165 4.17754 6.83848 2.90071 8.42022 2.90071C10.002 2.90071 11.2788 4.17754 11.2788 5.75928V7.665H2.70308C1.65493 7.665 0.797363 8.52257 0.797363 9.57071V19.0993C0.797363 20.1474 1.65493 21.005 2.70308 21.005H14.1374C15.1855 21.005 16.0431 20.1474 16.0431 19.0993V9.57071C16.0431 8.52257 15.1855 7.665 14.1374 7.665ZM2.70308 19.0993V9.57071H14.1374V19.0993H2.70308ZM10.3259 14.335C10.3259 15.3831 9.46836 16.2407 8.42022 16.2407C7.37208 16.2407 6.51451 15.3831 6.51451 14.335C6.51451 13.2869 7.37208 12.4293 8.42022 12.4293C9.46836 12.4293 10.3259 13.2869 10.3259 14.335Z" fill="white"/>
 						</mask>
-						<g mask="url(#drop-down3)">
-						<rect x="17" y="15" width="24" height="24" transform="rotate(-180 17 15)" fill="white"/>
+						<g mask="url(#mask5)">
+							<rect x="-4" y="-1" width="24" height="24" fill="#66788A"/>
 						</g>
-					</svg>
-					<h6>16%</h6>
-					<h6>Since last year</h6>
-				</div>				
-			</div>
-		</div>
-		<!-- [END] cards-container -->
-		<!-- [BEGIN] All Pipelines table -->
-		<div class="peplines-container">
-			<div class="all-peplines">
-				<div class="header-table">
-					<div><h4>All Pipelines</h4><h6 >3200 total</h6></div>
-					<div>
-						<h5 class="sort-by">Sort by: Newest</h5>
-						<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="drop-down4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="5">
-							<path d="M0 0L5.5 5L11 0H0Z" fill="white"/>
+					</svg>	
+					<h5>Authentication</h5>
+				</a>
+				<div class="support nav flex-column">
+					<h6>Support</h6>
+					<a class="brand" href="#">
+						<svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="21">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.56486 17.5163V20.6483L9.80896 20.048C14.2721 17.8991 17.2649 13.5665 17.2649 9.26C17.2649 4.7012 13.5587 0.994995 8.99986 0.994995C4.44106 0.994995 0.734863 4.7012 0.734863 9.26C0.734863 13.6709 4.20616 17.2901 8.56486 17.5163ZM2.47486 9.26C2.47486 5.6582 5.39806 2.735 8.99986 2.735C12.6017 2.735 15.5249 5.6582 15.5249 9.26C15.5249 12.4964 13.4717 15.785 10.3049 17.786V15.785H8.99986C5.39806 15.785 2.47486 12.8618 2.47486 9.26ZM9.86986 12.74V14.48H8.12986V12.74H9.86986ZM9.67015 8.66985C8.94951 9.22223 8.12986 9.85049 8.12986 11.435H9.86986C9.86986 10.482 10.4885 9.94143 11.1233 9.38661C11.7925 8.80178 12.4799 8.20113 12.4799 7.085C12.4799 5.16229 10.9226 3.605 8.99986 3.605C7.07716 3.605 5.51986 5.16229 5.51986 7.085H7.25986C7.25986 6.128 8.04286 5.345 8.99986 5.345C9.95686 5.345 10.7399 6.128 10.7399 7.085C10.7399 7.84991 10.2355 8.23653 9.67015 8.66985Z" fill="white"/>
 							</mask>
-							<g mask="url(#drop-down4)">
-							<rect x="-7" y="-10" width="25" height="24" fill="#9EA0A5"/>
+							<g mask="url(#mask6)">
+							<rect x="-3" y="-1" width="24" height="24" fill="#66788A"/>
 							</g>
 						</svg>
-						<button class="btn outline"  onclick=""><h5>NEW PIPELINE</h5></button>
-					</div>
+						<h5>Support</h5>
+					</a>
 				</div>
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th scope="col"><h5>Pipeline ID</h5></th>
-							<th scope="col"><h5>Pipeline Name</h5></th>
-							<th scope="col"><h5>Last Updated</h5></th>
-							<th scope="col"><h5>Status</h5></th>
-							<th scope="col"><h5>Actions</h5></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Cash Movement File Load</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47B881"/>
-								</svg>
-								<h5 class="status">Active</h5>
-							</td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots1)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit1)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Load Cash Movement Files</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#F7D154"/>
-								</svg>
-								<h5 class="status">Pending</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots2)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit2)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Chioke Okonkwo</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#ec4c47"/>
-								</svg>
-								<h5 class="status">Inactive</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots3)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit3)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Erin Green</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#f7d154"/>
-								</svg>
-								<h5 class="status">Delivered</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots4)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit4)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
-								</svg>
-								<h5 class="status">Delivered</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots5)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit5)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
-								</svg>
-								<h5 class="status">Delivered</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots6)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit6)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr class="table-footer">
-							<td colspan="3"></td>
-							<td colspan="2">
-								<h6 class="rows-per">Rows per page :</h6>
-								<h6>5</h6>
-								<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.463379 0L5.46338 5L10.4634 0H0.463379Z" fill="black"/>
-								</svg>
-								<h6 class="number-pages">1-10 of 100</h6>
-								<button>
-									<svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M8.12802 11.09L3.54802 6.5L8.12802 1.91L6.71802 0.5L0.718018 6.5L6.71802 12.5L8.12802 11.09Z" fill="black"/>
-									</svg>
-								</button>
-								<button>
-									<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.572083 11.34L5.15208 6.75L0.572083 2.16L1.98208 0.75L7.98208 6.75L1.98208 12.75L0.572083 11.34Z" fill="black"/>
-									</svg>
-								</button>
-							</td>
-						</tr>
-					</tbody>
-					<!-- <div class="footer-table">	
-					</div> -->
-				</table>
-			</div>
-			<div class="colored-card">
-				<div class="card-c-header">
-					<h4>Pipelines by Line of Business</h4>
-					<button>
-						<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8126 2C7.55898 2 4.91481 4.69 4.91481 8H7.8637L3.93185 12L0 8H2.94889C2.94889 3.58 6.46789 0 10.8126 0C12.3558 0 13.791 0.46 15 1.24L13.5649 2.7C12.749 2.25 11.8054 2 10.8126 2ZM14.1363 8L18.0682 4L22 8H19.0511C19.0511 12.42 15.5321 16 11.1874 16C9.64417 16 8.20904 15.54 7 14.76L8.43512 13.3C9.25098 13.75 10.1946 14 11.1874 14C14.441 14 17.0852 11.31 17.0852 8H14.1363Z" fill="#66788A"/>
-							<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8126 2C7.55898 2 4.91481 4.69 4.91481 8H7.8637L3.93185 12L0 8H2.94889C2.94889 3.58 6.46789 0 10.8126 0C12.3558 0 13.791 0.46 15 1.24L13.5649 2.7C12.749 2.25 11.8054 2 10.8126 2ZM14.1363 8L18.0682 4L22 8H19.0511C19.0511 12.42 15.5321 16 11.1874 16C9.64417 16 8.20904 15.54 7 14.76L8.43512 13.3C9.25098 13.75 10.1946 14 11.1874 14C14.441 14 17.0852 11.31 17.0852 8H14.1363Z" fill="white"/>
-							</mask>
-							<g mask="url(#mask0)">
-							</g>
-						</svg>
-					</button>
-				</div>
-				<div class="card-c-body">
-					<div class="colored-circle">
-					</div>
-					<div class="all-desktop">
-						<div class="health card-c-desc">
-							<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8333 0C24.4352 0 24.9468 0.206597 25.3681 0.619792C25.7894 1.03299 26 1.53472 26 2.125V14.875C26 15.4653 25.7894 15.967 25.3681 16.3802C24.9468 16.7934 24.4352 17 23.8333 17H2.16667C1.56482 17 1.05324 16.7934 0.631944 16.3802C0.210648 15.967 0 15.4653 0 14.875V2.125C0 1.53472 0.210648 1.03299 0.631944 0.619792C1.05324 0.206597 1.56482 0 2.16667 0H23.8333ZM23.725 15C23.7861 15 23.8472 14.9699 23.9083 14.9097C23.9694 14.8495 24 14.7894 24 14.7292V2.27083C24 2.21065 23.9694 2.15046 23.9083 2.09028C23.8472 2.03009 23.7861 2 23.725 2H2.275C2.21389 2 2.15278 2.03009 2.09167 2.09028C2.03056 2.15046 2 2.21065 2 2.27083V14.7292C2 14.7894 2.03056 14.8495 2.09167 14.9097C2.15278 14.9699 2.21389 15 2.275 15H23.725ZM20.6901 22.6875C20.8967 22.4792 21 22.2262 21 21.9286C21 21.631 20.8967 21.378 20.6901 21.1696C20.4835 20.9613 20.2326 20.8571 19.9375 20.8571H15.5547L14.7578 18.3571C14.6693 18.119 14.4922 18 14.2266 18H10.7734C10.5078 18 10.3307 18.119 10.2422 18.3571L9.44531 20.8571H5.0625C4.76736 20.8571 4.51649 20.9613 4.3099 21.1696C4.1033 21.378 4 21.631 4 21.9286C4 22.2262 4.1033 22.4792 4.3099 22.6875C4.51649 22.8958 4.76736 23 5.0625 23H19.9375C20.2326 23 20.4835 22.8958 20.6901 22.6875Z" fill="#A6B1BB"/>
+			</nav>
+		</aside>
+		<!-- [END] Menu -->
+		<!-- [BEGIN] Dash-container -->
+		<main id="mainId">
+			<!-- [BEGIN] cards-container -->
+			<div class="cards-container">
+				<div class="my-card card1">
+					<div class="card-up">
+						<div>
+							<h6>TOTAL PIPELINES</h6>
+							<h1>24</h1>
+						</div>
+						<div class="oval1 oval">
+							<svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask7" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="26">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5376 5.85356H28.8305V25.8636H0.244751V0.136414H14.5376V5.85356ZM3.10332 23.005H5.96189V20.1464H3.10332V23.005ZM5.96189 17.2878H3.10332V14.4293H5.96189V17.2878ZM3.10332 11.5707H5.96189V8.71213H3.10332V11.5707ZM5.96189 5.85356H3.10332V2.99499H5.96189V5.85356ZM8.82047 23.005H11.679V20.1464H8.82047V23.005ZM11.679 17.2878H8.82047V14.4293H11.679V17.2878ZM8.82047 11.5707H11.679V8.71213H8.82047V11.5707ZM11.679 5.85356H8.82047V2.99499H11.679V5.85356ZM25.9719 23.005V8.71213H14.5376V11.5707H17.3962V14.4293H14.5376V17.2878H17.3962V20.1464H14.5376V23.005H25.9719ZM23.1133 11.5707H20.2548V14.4293H23.1133V11.5707ZM20.2548 17.2878H23.1133V20.1464H20.2548V17.2878Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask7)">
+									<rect x="-3" y="-5" width="36" height="36" fill="white"/>
+								</g>
 							</svg>
-							<h6>Health</h6>
-							<h1>63%</h1>
 						</div>
-						<div class="IMD card-c-desc">
-							<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8333 0C24.4352 0 24.9468 0.206597 25.3681 0.619792C25.7894 1.03299 26 1.53472 26 2.125V14.875C26 15.4653 25.7894 15.967 25.3681 16.3802C24.9468 16.7934 24.4352 17 23.8333 17H2.16667C1.56482 17 1.05324 16.7934 0.631944 16.3802C0.210648 15.967 0 15.4653 0 14.875V2.125C0 1.53472 0.210648 1.03299 0.631944 0.619792C1.05324 0.206597 1.56482 0 2.16667 0H23.8333ZM23.725 15C23.7861 15 23.8472 14.9699 23.9083 14.9097C23.9694 14.8495 24 14.7894 24 14.7292V2.27083C24 2.21065 23.9694 2.15046 23.9083 2.09028C23.8472 2.03009 23.7861 2 23.725 2H2.275C2.21389 2 2.15278 2.03009 2.09167 2.09028C2.03056 2.15046 2 2.21065 2 2.27083V14.7292C2 14.7894 2.03056 14.8495 2.09167 14.9097C2.15278 14.9699 2.21389 15 2.275 15H23.725ZM20.6901 22.6875C20.8967 22.4792 21 22.2262 21 21.9286C21 21.631 20.8967 21.378 20.6901 21.1696C20.4835 20.9613 20.2326 20.8571 19.9375 20.8571H15.5547L14.7578 18.3571C14.6693 18.119 14.4922 18 14.2266 18H10.7734C10.5078 18 10.3307 18.119 10.2422 18.3571L9.44531 20.8571H5.0625C4.76736 20.8571 4.51649 20.9613 4.3099 21.1696C4.1033 21.378 4 21.631 4 21.9286C4 22.2262 4.1033 22.4792 4.3099 22.6875C4.51649 22.8958 4.76736 23 5.0625 23H19.9375C20.2326 23 20.4835 22.8958 20.6901 22.6875Z" fill="#A6B1BB"/>
+					</div>
+					<div class="group">
+						<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 5L5 0L0 5L10 5Z" fill="#47B881"/>
+							<mask id="drop-down1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
+							<path d="M10 5L5 0L0 5L10 5Z" fill="white"/>
+							</mask>
+							<g mask="url(#drop-down1)">
+							<rect x="17" y="15" width="24" height="24" transform="rotate(-180 17 15)" fill="#47B881"/>
+							</g>
+						</svg>
+						<h6 class="prc1">16%</h6>
+						<h6>Since last month</h6>
+					</div>
+				</div>
+				<div class="my-card">
+					<div class="card-up">
+						<div>
+							<h6>DATA VOLUME</h6>
+							<h1>16,000 records </h1>
+						</div>
+						<div class="oval2 oval">
+							<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask8" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="29">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7003 0.00680542C6.81067 0.00680542 0.407471 6.41001 0.407471 14.2997C0.407471 22.1893 6.81067 28.5925 14.7003 28.5925C22.59 28.5925 28.9932 22.1893 28.9932 14.2997C28.9932 6.41001 22.59 0.00680542 14.7003 0.00680542ZM15.4293 11.4268C15.4293 9.06848 13.4997 7.13894 11.1414 7.13894C8.78308 7.13894 6.85355 9.06848 6.85355 11.4268C6.85355 13.7851 8.78308 15.7147 11.1414 15.7147C13.4997 15.7147 15.4293 13.7851 15.4293 11.4268ZM11.1414 12.8561C10.3553 12.8561 9.71212 12.2129 9.71212 11.4268C9.71212 10.6407 10.3553 9.99751 11.1414 9.99751C11.9275 9.99751 12.5707 10.6407 12.5707 11.4268C12.5707 12.2129 11.9275 12.8561 11.1414 12.8561ZM23.2903 12.8561C23.2903 14.4426 22.0183 15.7147 20.4318 15.7147C18.8453 15.7147 17.5732 14.4426 17.5732 12.8561C17.5589 11.2696 18.8453 9.99751 20.4318 9.99751C22.0183 9.99751 23.2903 11.2696 23.2903 12.8561ZM11.1414 20.0168C9.1547 20.0168 6.88214 20.8315 5.91022 21.6033C7.86834 23.9616 10.7555 25.5053 14 25.6911V21.7177C14 19.0163 18.2593 17.8586 20.4318 17.8586C21.6895 17.8586 23.6334 18.2588 25.0627 19.1021C25.7487 17.6299 26.1346 16.0005 26.1346 14.2854C26.1346 7.98222 21.0035 2.85108 14.7003 2.85108C8.39718 2.85108 3.26604 7.98222 3.26604 14.2854C3.26604 16.0434 3.66624 17.7014 4.38089 19.1878C6.29613 17.7871 9.28333 17.1439 11.1414 17.1439C11.7703 17.1439 12.5278 17.2297 13.3282 17.3726C12.4278 18.1873 11.8132 19.1164 11.4701 20.0311C11.4111 20.0311 11.352 20.0273 11.2949 20.0236C11.2415 20.0201 11.1898 20.0168 11.1414 20.0168Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask8)">
+									<rect x="-4" y="-3" width="36" height="36" fill="white"/>
+								</g>
+							</svg>	
+						</div>
+					</div>
+					<div class="group">
+						<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="drop-down2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
+							<path d="M0 0L5 5L10 0H0Z" fill="white"/>
+							</mask>
+							<g mask="url(#drop-down2)">
+							<rect x="-7" y="-10" width="24" height="24" fill="#EC4C47"/>
+							</g>
+						</svg>
+						<h6 class="prc2">12%</h6>
+						<h6>Since last month</h6>
+					</div>
+				</div>
+				<div class="my-card card3">
+					<div class="card-up">
+						<div>
+							<h6>DATA LOAD SUCCESS RATE</h6>
+							<h1>95% </h1>
+						</div>
+						<div class="oval3 oval">
+							<svg width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask9" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="20">
+								<path d="M2.31348 19.2761L10.8892 10.6861L16.6063 16.4032L28.7553 2.73923L26.74 0.723938L16.6063 12.1153L10.8892 6.3982L0.169556 17.1321L2.31348 19.2761Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask9)">
+									<rect x="-4" y="-8" width="36" height="36" fill="white"/>
+								</g>
 							</svg>
-							<h6>Health</h6>
-							<h1>15%</h1>
 						</div>
-						<div class="others">
-							<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8333 0C24.4352 0 24.9468 0.206597 25.3681 0.619792C25.7894 1.03299 26 1.53472 26 2.125V14.875C26 15.4653 25.7894 15.967 25.3681 16.3802C24.9468 16.7934 24.4352 17 23.8333 17H2.16667C1.56482 17 1.05324 16.7934 0.631944 16.3802C0.210648 15.967 0 15.4653 0 14.875V2.125C0 1.53472 0.210648 1.03299 0.631944 0.619792C1.05324 0.206597 1.56482 0 2.16667 0H23.8333ZM23.725 15C23.7861 15 23.8472 14.9699 23.9083 14.9097C23.9694 14.8495 24 14.7894 24 14.7292V2.27083C24 2.21065 23.9694 2.15046 23.9083 2.09028C23.8472 2.03009 23.7861 2 23.725 2H2.275C2.21389 2 2.15278 2.03009 2.09167 2.09028C2.03056 2.15046 2 2.21065 2 2.27083V14.7292C2 14.7894 2.03056 14.8495 2.09167 14.9097C2.15278 14.9699 2.21389 15 2.275 15H23.725ZM20.6901 22.6875C20.8967 22.4792 21 22.2262 21 21.9286C21 21.631 20.8967 21.378 20.6901 21.1696C20.4835 20.9613 20.2326 20.8571 19.9375 20.8571H15.5547L14.7578 18.3571C14.6693 18.119 14.4922 18 14.2266 18H10.7734C10.5078 18 10.3307 18.119 10.2422 18.3571L9.44531 20.8571H5.0625C4.76736 20.8571 4.51649 20.9613 4.3099 21.1696C4.1033 21.378 4 21.631 4 21.9286C4 22.2262 4.1033 22.4792 4.3099 22.6875C4.51649 22.8958 4.76736 23 5.0625 23H19.9375C20.2326 23 20.4835 22.8958 20.6901 22.6875Z" fill="#A6B1BB"/>
+					</div>
+					<div class="card3-rect">
+						<div class="card3-rect-small"></div>
+					</div>
+				</div>
+				<div class="my-card card4">
+					<div class="card-up">
+						<div>
+							<h6>TOTAL DATA PROCESSED</h6>
+							<h1>23,200 GB</h1>
+						</div>
+						<div class="oval">
+							<svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask10" mask-type="alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="48" height="40">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4.26776 0.942871V39.0572H51.9106V0.942871H4.26776ZM16.1785 10.4714H11.4142V29.5286H16.1785V10.4714ZM28.0892 29.5286H20.9428C19.6326 29.5286 18.5606 28.4566 18.5606 27.1464V12.8536C18.5606 11.5434 19.6326 10.4714 20.9428 10.4714H28.0892C29.3994 10.4714 30.4713 11.5434 30.4713 12.8536V27.1464C30.4713 28.4566 29.3994 29.5286 28.0892 29.5286ZM35.2356 29.5286H42.382C43.6922 29.5286 44.7642 28.4566 44.7642 27.1464V12.8536C44.7642 11.5434 43.6922 10.4714 42.382 10.4714H35.2356C33.9254 10.4714 32.8535 11.5434 32.8535 12.8536V27.1464C32.8535 28.4566 33.9254 29.5286 35.2356 29.5286ZM37.6178 15.2357H39.9999V24.7643H37.6178V15.2357ZM23.3249 15.2357H25.707V24.7643H23.3249V15.2357ZM9.03205 34.2929H47.1463V5.70716H9.03205V34.2929Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask10)">
+								<rect x="-1" y="-10" width="60" height="60" fill="white"/>
+								</g>
 							</svg>
-							<h6>Health</h6>
-							<h1>22%</h1>
-						</div>					
-					</div>
-				</div>
-				<div class="card-c-footer">
-					<div class="card-c-f">
-						<h5>Last 7 days</h5>
-						<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="card-days" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="6" height="10">
-							<path d="M0.705261 10L5.81052 5L0.705261 0V10Z" fill="white"/>
-							</mask>
-							<g mask="url(#card-days)">
-							<rect x="-9.29474" y="-7" width="25" height="24" fill="#9EA0A5"/>
-							</g>
-						</svg>
-					</div>
-					<div class="card-c-f ">
-						<h5 class="top-users">Top Users</h5>
-						<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="card-users" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="6" height="10">
-							<path d="M0.706299 10L5.81119 5L0.706299 0V10Z" fill="white"/>
-							</mask>
-							<g mask="url(#card-users)">
-							<rect x="-9.2937" y="-7" width="25" height="24" fill="#1665D8"/>
-							</g>
-						</svg>
-					</div>
-				</div>
-				
-			</div>
-			<div class= "all-pep-card">
-				<div class="pep-header">
-					<h4>All Pipelines</h4>
-					<h6>5 in total</h6>
-				</div>
-				<div class="pep">
-					<div class="pep-img-tit"> 
-						<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<rect width="58" height="58" fill="url(#pattern0)"/>
-							<defs>
-							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-							<use xlink:href="#image0" transform="scale(0.0147059)"/>
-							</pattern>
-							<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
-							</defs>
-						</svg>
-						<div class="pep-title">
-							<h4>IMD Pipelines</h4>
-							<h6>Updated 5hr ago</h6>
-						</div>
-						
-					</div>
-					<button>
-						<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="dots7" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-							</mask>
-							<g mask="url(#dots7)">
-							<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-							</g>
-						</svg>
-					</button>
-					
-				</div>
-				<div class="pep">
-					<div class="pep-img-tit"> 
-						<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<rect width="58" height="58" fill="url(#pattern0)"/>
-							<defs>
-							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-							<use xlink:href="#image0" transform="scale(0.0147059)"/>
-							</pattern>
-							<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
-							</defs>
-						</svg>
-						<div class="pep-title">
-							<h4>Health & Benefits Pipelines</h4>
-							<h6>Updated 5hr ago</h6>
-						</div>
-						
-					</div>
-					<button>
-						<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="dots8" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-							</mask>
-							<g mask="url(#dots8)">
-							<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-							</g>
-						</svg>
-					</button>
-					
-				</div>
-				<div class="pep">
-					<div class="pep-img-tit"> 
-						<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<rect width="58" height="58" fill="url(#pattern0)"/>
-							<defs>
-							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-							<use xlink:href="#image0" transform="scale(0.0147059)"/>
-							</pattern>
-							<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
-							</defs>
-						</svg>
-						<div class="pep-title">
-							<h4>Data Lake Pipelines</h4>
-							<h6>Updated 5hr ago</h6>
-						</div>
-						
-					</div>
-					<button>
-						<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="dots9" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-							</mask>
-							<g mask="url(#dots9)">
-							<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-							</g>
-						</svg>
-					</button>
-				</div>
-				<div class="pep">
-					<div class="pep-img-tit"> 
-						<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<rect width="58" height="58" fill="url(#pattern0)"/>
-							<defs>
-							<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-							<use xlink:href="#image0" transform="scale(0.0147059)"/>
-							</pattern>
-							<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
-							</defs>
-						</svg>
-						<div class="pep-title">
-							<h4>Data Warehouse  Pipelines</h4>
-							<h6>Updated 5hr ago</h6>
 						</div>
 					</div>
-					<button>
-						<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<mask id="dots10" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+					<div class="group">
+						<svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 5L5 0L0 5L10 5Z" fill="#47B881"/>
+							<mask id="drop-down3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="5">
+							<path d="M10 5L5 0L0 5L10 5Z" fill="white"/>
 							</mask>
-							<g mask="url(#dots10)">
-							<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+							<g mask="url(#drop-down3)">
+							<rect x="17" y="15" width="24" height="24" transform="rotate(-180 17 15)" fill="white"/>
 							</g>
 						</svg>
-					</button>
-				</div>
-				<div class="all-pip-card-f">
-					<h5>View all</h5>
-					<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<mask id="view-all" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="6" height="10">
-						<path d="M0.888062 10L6 5L0.888062 0V10Z" fill="white"/>
-						</mask>
-						<g mask="url(#view-all)">
-						<rect x="-9.11194" y="-7" width="25" height="24" fill="#1665D8"/>
-						</g>
-					</svg>
+						<h6>16%</h6>
+						<h6>Since last year</h6>
+					</div>				
 				</div>
 			</div>
-			<div class="all-peplines">
-				<div class="header-table">
-						<div><h4>IMD Pipelines</h4><h6 >32 total</h6></div>
+			<!-- [END] cards-container -->
+			<!-- [BEGIN] All Pipelines table -->
+			<div class="peplines-container">
+				<div class="all-peplines">
+					<div class="header-table">
+						<div><h4>All Pipelines</h4><h6 >3200 total</h6></div>
 						<div>
 							<h5 class="sort-by">Sort by: Newest</h5>
 							<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -702,239 +265,676 @@
 							</svg>
 							<button class="btn outline"  onclick=""><h5>NEW PIPELINE</h5></button>
 						</div>
+					</div>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col"><h5>Pipeline ID</h5></th>
+								<th scope="col"><h5>Pipeline Name</h5></th>
+								<th scope="col"><h5>Last Updated</h5></th>
+								<th scope="col"><h5>Status</h5></th>
+								<th scope="col"><h5>Actions</h5></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Cash Movement File Load</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47B881"/>
+									</svg>
+									<h5 class="status">Active</h5>
+								</td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots1)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit1)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Load Cash Movement Files</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#F7D154"/>
+									</svg>
+									<h5 class="status">Pending</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots2)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit2)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Chioke Okonkwo</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#ec4c47"/>
+									</svg>
+									<h5 class="status">Inactive</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots3)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit3)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Erin Green</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#f7d154"/>
+									</svg>
+									<h5 class="status">Delivered</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots4)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit4)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
+									</svg>
+									<h5 class="status">Delivered</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots5)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit5)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
+									</svg>
+									<h5 class="status">Delivered</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots6)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit6)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr class="table-footer">
+								<td colspan="3"></td>
+								<td colspan="2">
+									<h6 class="rows-per">Rows per page :</h6>
+									<h6>5</h6>
+									<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.463379 0L5.46338 5L10.4634 0H0.463379Z" fill="black"/>
+									</svg>
+									<h6 class="number-pages">1-10 of 100</h6>
+									<button>
+										<svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M8.12802 11.09L3.54802 6.5L8.12802 1.91L6.71802 0.5L0.718018 6.5L6.71802 12.5L8.12802 11.09Z" fill="black"/>
+										</svg>
+									</button>
+									<button>
+										<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.572083 11.34L5.15208 6.75L0.572083 2.16L1.98208 0.75L7.98208 6.75L1.98208 12.75L0.572083 11.34Z" fill="black"/>
+										</svg>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+						<!-- <div class="footer-table">	
+						</div> -->
+					</table>
 				</div>
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th scope="col"><h5>Pipeline ID</h5></th>
-							<th scope="col"><h5>Pipeline Name</h5></th>
-							<th scope="col"><h5>Last Updated</h5></th>
-							<th scope="col"><h5>Status</h5></th>
-							<th scope="col"><h5>Actions</h5></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Adam Denisov</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47B881"/>
+				<div class="colored-card">
+					<div class="card-c-header">
+						<h4>Pipelines by Line of Business</h4>
+						<button>
+							<svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8126 2C7.55898 2 4.91481 4.69 4.91481 8H7.8637L3.93185 12L0 8H2.94889C2.94889 3.58 6.46789 0 10.8126 0C12.3558 0 13.791 0.46 15 1.24L13.5649 2.7C12.749 2.25 11.8054 2 10.8126 2ZM14.1363 8L18.0682 4L22 8H19.0511C19.0511 12.42 15.5321 16 11.1874 16C9.64417 16 8.20904 15.54 7 14.76L8.43512 13.3C9.25098 13.75 10.1946 14 11.1874 14C14.441 14 17.0852 11.31 17.0852 8H14.1363Z" fill="#66788A"/>
+								<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="16">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8126 2C7.55898 2 4.91481 4.69 4.91481 8H7.8637L3.93185 12L0 8H2.94889C2.94889 3.58 6.46789 0 10.8126 0C12.3558 0 13.791 0.46 15 1.24L13.5649 2.7C12.749 2.25 11.8054 2 10.8126 2ZM14.1363 8L18.0682 4L22 8H19.0511C19.0511 12.42 15.5321 16 11.1874 16C9.64417 16 8.20904 15.54 7 14.76L8.43512 13.3C9.25098 13.75 10.1946 14 11.1874 14C14.441 14 17.0852 11.31 17.0852 8H14.1363Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask0)">
+								</g>
+							</svg>
+						</button>
+					</div>
+					<div class="card-c-body">
+						<div class="colored-circle">
+						</div>
+						<div class="all-desktop">
+							<div class="health card-c-desc">
+								<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8333 0C24.4352 0 24.9468 0.206597 25.3681 0.619792C25.7894 1.03299 26 1.53472 26 2.125V14.875C26 15.4653 25.7894 15.967 25.3681 16.3802C24.9468 16.7934 24.4352 17 23.8333 17H2.16667C1.56482 17 1.05324 16.7934 0.631944 16.3802C0.210648 15.967 0 15.4653 0 14.875V2.125C0 1.53472 0.210648 1.03299 0.631944 0.619792C1.05324 0.206597 1.56482 0 2.16667 0H23.8333ZM23.725 15C23.7861 15 23.8472 14.9699 23.9083 14.9097C23.9694 14.8495 24 14.7894 24 14.7292V2.27083C24 2.21065 23.9694 2.15046 23.9083 2.09028C23.8472 2.03009 23.7861 2 23.725 2H2.275C2.21389 2 2.15278 2.03009 2.09167 2.09028C2.03056 2.15046 2 2.21065 2 2.27083V14.7292C2 14.7894 2.03056 14.8495 2.09167 14.9097C2.15278 14.9699 2.21389 15 2.275 15H23.725ZM20.6901 22.6875C20.8967 22.4792 21 22.2262 21 21.9286C21 21.631 20.8967 21.378 20.6901 21.1696C20.4835 20.9613 20.2326 20.8571 19.9375 20.8571H15.5547L14.7578 18.3571C14.6693 18.119 14.4922 18 14.2266 18H10.7734C10.5078 18 10.3307 18.119 10.2422 18.3571L9.44531 20.8571H5.0625C4.76736 20.8571 4.51649 20.9613 4.3099 21.1696C4.1033 21.378 4 21.631 4 21.9286C4 22.2262 4.1033 22.4792 4.3099 22.6875C4.51649 22.8958 4.76736 23 5.0625 23H19.9375C20.2326 23 20.4835 22.8958 20.6901 22.6875Z" fill="#A6B1BB"/>
 								</svg>
-								<h5 class="status">Active</h5>
-							</td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots1)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit1)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Ainara Vergara</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#F7D154"/>
+								<h6>Health</h6>
+								<h1>63%</h1>
+							</div>
+							<div class="IMD card-c-desc">
+								<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8333 0C24.4352 0 24.9468 0.206597 25.3681 0.619792C25.7894 1.03299 26 1.53472 26 2.125V14.875C26 15.4653 25.7894 15.967 25.3681 16.3802C24.9468 16.7934 24.4352 17 23.8333 17H2.16667C1.56482 17 1.05324 16.7934 0.631944 16.3802C0.210648 15.967 0 15.4653 0 14.875V2.125C0 1.53472 0.210648 1.03299 0.631944 0.619792C1.05324 0.206597 1.56482 0 2.16667 0H23.8333ZM23.725 15C23.7861 15 23.8472 14.9699 23.9083 14.9097C23.9694 14.8495 24 14.7894 24 14.7292V2.27083C24 2.21065 23.9694 2.15046 23.9083 2.09028C23.8472 2.03009 23.7861 2 23.725 2H2.275C2.21389 2 2.15278 2.03009 2.09167 2.09028C2.03056 2.15046 2 2.21065 2 2.27083V14.7292C2 14.7894 2.03056 14.8495 2.09167 14.9097C2.15278 14.9699 2.21389 15 2.275 15H23.725ZM20.6901 22.6875C20.8967 22.4792 21 22.2262 21 21.9286C21 21.631 20.8967 21.378 20.6901 21.1696C20.4835 20.9613 20.2326 20.8571 19.9375 20.8571H15.5547L14.7578 18.3571C14.6693 18.119 14.4922 18 14.2266 18H10.7734C10.5078 18 10.3307 18.119 10.2422 18.3571L9.44531 20.8571H5.0625C4.76736 20.8571 4.51649 20.9613 4.3099 21.1696C4.1033 21.378 4 21.631 4 21.9286C4 22.2262 4.1033 22.4792 4.3099 22.6875C4.51649 22.8958 4.76736 23 5.0625 23H19.9375C20.2326 23 20.4835 22.8958 20.6901 22.6875Z" fill="#A6B1BB"/>
 								</svg>
-								<h5 class="status">Pending</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots2)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit2)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Chioke Okonkwo</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#ec4c47"/>
+								<h6>Health</h6>
+								<h1>15%</h1>
+							</div>
+							<div class="others">
+								<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8333 0C24.4352 0 24.9468 0.206597 25.3681 0.619792C25.7894 1.03299 26 1.53472 26 2.125V14.875C26 15.4653 25.7894 15.967 25.3681 16.3802C24.9468 16.7934 24.4352 17 23.8333 17H2.16667C1.56482 17 1.05324 16.7934 0.631944 16.3802C0.210648 15.967 0 15.4653 0 14.875V2.125C0 1.53472 0.210648 1.03299 0.631944 0.619792C1.05324 0.206597 1.56482 0 2.16667 0H23.8333ZM23.725 15C23.7861 15 23.8472 14.9699 23.9083 14.9097C23.9694 14.8495 24 14.7894 24 14.7292V2.27083C24 2.21065 23.9694 2.15046 23.9083 2.09028C23.8472 2.03009 23.7861 2 23.725 2H2.275C2.21389 2 2.15278 2.03009 2.09167 2.09028C2.03056 2.15046 2 2.21065 2 2.27083V14.7292C2 14.7894 2.03056 14.8495 2.09167 14.9097C2.15278 14.9699 2.21389 15 2.275 15H23.725ZM20.6901 22.6875C20.8967 22.4792 21 22.2262 21 21.9286C21 21.631 20.8967 21.378 20.6901 21.1696C20.4835 20.9613 20.2326 20.8571 19.9375 20.8571H15.5547L14.7578 18.3571C14.6693 18.119 14.4922 18 14.2266 18H10.7734C10.5078 18 10.3307 18.119 10.2422 18.3571L9.44531 20.8571H5.0625C4.76736 20.8571 4.51649 20.9613 4.3099 21.1696C4.1033 21.378 4 21.631 4 21.9286C4 22.2262 4.1033 22.4792 4.3099 22.6875C4.51649 22.8958 4.76736 23 5.0625 23H19.9375C20.2326 23 20.4835 22.8958 20.6901 22.6875Z" fill="#A6B1BB"/>
 								</svg>
-								<h5 class="status">Refund</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots3)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit3)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Erin Green</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#f7d154"/>
-								</svg>
-								<h5 class="status">Delivered</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots4)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit4)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
-								</svg>
-								<h5 class="status">Delivered</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots5)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit5)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><h5>23412355-2</h5></th>
-							<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
-							<td><h5 class="pip-date">04/28/2020</h5></td>
-							<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
-								</svg>
-								<h5 class="status">Delivered</h5></td>
-							<td>
-								<button>
-									<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="dots6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
-										</mask>
-										<g mask="url(#dots6)">
-										<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</button>
-								<a href="#">
-									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<mask id="edit6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
-										</mask>
-										<g mask="url(#edit6)">
-										<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
-										</g>
-									</svg>
-								</a>
-							</td>
-						</tr>
-						<tr class="table-footer">
-							<td colspan="3"></td>
-							<td colspan="2">
-								<h6 class="rows-per">Rows per page :</h6>
-								<h6>5</h6>
+								<h6>Health</h6>
+								<h1>22%</h1>
+							</div>					
+						</div>
+					</div>
+					<div class="card-c-footer">
+						<div class="card-c-f">
+							<h5>Last 7 days</h5>
+							<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="card-days" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="6" height="10">
+								<path d="M0.705261 10L5.81052 5L0.705261 0V10Z" fill="white"/>
+								</mask>
+								<g mask="url(#card-days)">
+								<rect x="-9.29474" y="-7" width="25" height="24" fill="#9EA0A5"/>
+								</g>
+							</svg>
+						</div>
+						<div class="card-c-f ">
+							<h5 class="top-users">Top Users</h5>
+							<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="card-users" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="6" height="10">
+								<path d="M0.706299 10L5.81119 5L0.706299 0V10Z" fill="white"/>
+								</mask>
+								<g mask="url(#card-users)">
+								<rect x="-9.2937" y="-7" width="25" height="24" fill="#1665D8"/>
+								</g>
+							</svg>
+						</div>
+					</div>
+					
+				</div>
+				<div class= "all-pep-card">
+					<div class="pep-header">
+						<h4>All Pipelines</h4>
+						<h6>5 in total</h6>
+					</div>
+					<div class="pep">
+						<div class="pep-img-tit"> 
+							<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="58" height="58" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.0147059)"/>
+								</pattern>
+								<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+							<div class="pep-title">
+								<h4>IMD Pipelines</h4>
+								<h6>Updated 5hr ago</h6>
+							</div>
+							
+						</div>
+						<button>
+							<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="dots7" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+								</mask>
+								<g mask="url(#dots7)">
+								<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+								</g>
+							</svg>
+						</button>
+						
+					</div>
+					<div class="pep">
+						<div class="pep-img-tit"> 
+							<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="58" height="58" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.0147059)"/>
+								</pattern>
+								<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+							<div class="pep-title">
+								<h4>Health & Benefits Pipelines</h4>
+								<h6>Updated 5hr ago</h6>
+							</div>
+							
+						</div>
+						<button>
+							<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="dots8" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+								</mask>
+								<g mask="url(#dots8)">
+								<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+								</g>
+							</svg>
+						</button>
+						
+					</div>
+					<div class="pep">
+						<div class="pep-img-tit"> 
+							<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="58" height="58" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.0147059)"/>
+								</pattern>
+								<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+							<div class="pep-title">
+								<h4>Data Lake Pipelines</h4>
+								<h6>Updated 5hr ago</h6>
+							</div>
+							
+						</div>
+						<button>
+							<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="dots9" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+								</mask>
+								<g mask="url(#dots9)">
+								<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+								</g>
+							</svg>
+						</button>
+					</div>
+					<div class="pep">
+						<div class="pep-img-tit"> 
+							<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect width="58" height="58" fill="url(#pattern0)"/>
+								<defs>
+								<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#image0" transform="scale(0.0147059)"/>
+								</pattern>
+								<image id="image0" width="68" height="68" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+							<div class="pep-title">
+								<h4>Data Warehouse  Pipelines</h4>
+								<h6>Updated 5hr ago</h6>
+							</div>
+						</div>
+						<button>
+							<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="dots10" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+								</mask>
+								<g mask="url(#dots10)">
+								<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+								</g>
+							</svg>
+						</button>
+					</div>
+					<div class="all-pip-card-f">
+						<h5>View all</h5>
+						<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="view-all" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="6" height="10">
+							<path d="M0.888062 10L6 5L0.888062 0V10Z" fill="white"/>
+							</mask>
+							<g mask="url(#view-all)">
+							<rect x="-9.11194" y="-7" width="25" height="24" fill="#1665D8"/>
+							</g>
+						</svg>
+					</div>
+				</div>
+				<div class="all-peplines">
+					<div class="header-table">
+							<div><h4>IMD Pipelines</h4><h6 >32 total</h6></div>
+							<div>
+								<h5 class="sort-by">Sort by: Newest</h5>
 								<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.463379 0L5.46338 5L10.4634 0H0.463379Z" fill="black"/>
+									<mask id="drop-down4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="11" height="5">
+									<path d="M0 0L5.5 5L11 0H0Z" fill="white"/>
+									</mask>
+									<g mask="url(#drop-down4)">
+									<rect x="-7" y="-10" width="25" height="24" fill="#9EA0A5"/>
+									</g>
 								</svg>
-								<h6 class="number-pages">1-10 of 100</h6>
-								<button>
-									<svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M8.12802 11.09L3.54802 6.5L8.12802 1.91L6.71802 0.5L0.718018 6.5L6.71802 12.5L8.12802 11.09Z" fill="black"/>
+								<button class="btn outline"  onclick=""><h5>NEW PIPELINE</h5></button>
+							</div>
+					</div>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th scope="col"><h5>Pipeline ID</h5></th>
+								<th scope="col"><h5>Pipeline Name</h5></th>
+								<th scope="col"><h5>Last Updated</h5></th>
+								<th scope="col"><h5>Status</h5></th>
+								<th scope="col"><h5>Actions</h5></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Adam Denisov</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47B881"/>
 									</svg>
-								</button>
-								<button>
-									<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.572083 11.34L5.15208 6.75L0.572083 2.16L1.98208 0.75L7.98208 6.75L1.98208 12.75L0.572083 11.34Z" fill="black"/>
+									<h5 class="status">Active</h5>
+								</td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots1)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit1)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Ainara Vergara</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#F7D154"/>
 									</svg>
-								</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+									<h5 class="status">Pending</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots2)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit2" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit2)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Chioke Okonkwo</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#ec4c47"/>
+									</svg>
+									<h5 class="status">Refund</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots3)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit3" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit3)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Erin Green</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#f7d154"/>
+									</svg>
+									<h5 class="status">Delivered</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots4)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit4" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit4)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
+									</svg>
+									<h5 class="status">Delivered</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots5)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit5" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit5)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><h5>23412355-2</h5></th>
+								<td ><h5 class="pip-name">Iruka Akuchi</h5></td>
+								<td><h5 class="pip-date">04/28/2020</h5></td>
+								<td> <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" fill="#47b881"/>
+									</svg>
+									<h5 class="status">Delivered</h5></td>
+								<td>
+									<button>
+										<svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="dots6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="4" height="16">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM0 14C0 12.9 0.9 12 2 12C3.1 12 4 12.9 4 14C4 15.1 3.1 16 2 16C0.9 16 0 15.1 0 14Z" fill="white"/>
+											</mask>
+											<g mask="url(#dots6)">
+											<rect x="-10" y="-4" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</button>
+									<a href="#">
+										<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<mask id="edit6" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7011 2.68966C18.0996 3.08812 18.0996 3.7318 17.7011 4.13027L15.8314 6L12 2.16858L13.8697 0.298851C14.2682 -0.0996169 14.9119 -0.0996169 15.3103 0.298851L17.7011 2.68966ZM0 18V14.2019L11.2019 3L15 6.79811L3.79811 18H0Z" fill="white"/>
+											</mask>
+											<g mask="url(#edit6)">
+											<rect x="-3" y="-3" width="24" height="24" fill="#9EA0A5"/>
+											</g>
+										</svg>
+									</a>
+								</td>
+							</tr>
+							<tr class="table-footer">
+								<td colspan="3"></td>
+								<td colspan="2">
+									<h6 class="rows-per">Rows per page :</h6>
+									<h6>5</h6>
+									<svg width="11" height="5" viewBox="0 0 11 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.463379 0L5.46338 5L10.4634 0H0.463379Z" fill="black"/>
+									</svg>
+									<h6 class="number-pages">1-10 of 100</h6>
+									<button>
+										<svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M8.12802 11.09L3.54802 6.5L8.12802 1.91L6.71802 0.5L0.718018 6.5L6.71802 12.5L8.12802 11.09Z" fill="black"/>
+										</svg>
+									</button>
+									<button>
+										<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd" d="M0.572083 11.34L5.15208 6.75L0.572083 2.16L1.98208 0.75L7.98208 6.75L1.98208 12.75L0.572083 11.34Z" fill="black"/>
+										</svg>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-		</div>
-		<!-- [END] All Pipelines table -->
-		<div class="pep-footer">
-			<h5>Data Fabric Configuration UI</h5>
-			<h6>Disclaimer: </h6>
-		</div>
-	</main>
-</div>
-	<!-- [END] Dash-container -->
+			</div>
+			<!-- [END] All Pipelines table -->
+			<div class="pep-footer">
+				<h5>Data Fabric Configuration UI</h5>
+				<h6>Disclaimer: </h6>
+			</div>
+		</main>
+	</div>
+	<!-- [END] Dash-container -->	
 </body>
 
 
@@ -951,31 +951,44 @@
 	<script src="./assets/js/main.js"></script>
 	<script>
 			function manageNav() {
-				var x = document.getElementById("mySidepanel");
-				var y = document.getElementById("bodyId");
-				var z = document.getElementById ("mainId");
+				var csidepanel = document.getElementById("mySidepanel");
+				var cbody = document.getElementById("bodyId");
+				var cmain = document.getElementById ("mainId");
+				var cnavbar = document.getElementById("navId");
 				var exist = false;
 
-				if (window.getComputedStyle(x).left === "0px") {
+				if (window.getComputedStyle(csidepanel).left === "0px") {
 					exist = true;
 				}
 				if (!exist) {
-					x.style.left = "0px";
-					x.style.marginTop = "0px";
-					x.style.transition = "all 300ms ease-in-out";
-					y.style.backgroundColor = "black";
-					y.style.zIndex = "-1";
-					z.style.opacity = "0.5";
-					z.style.transition = "all 300ms ease-in-out";
+					csidepanel.style.left = "0px";
+					csidepanel.style.marginTop = "0px";
+					csidepanel.style.transition = "all 300ms ease-in-out";
+					
+					cbody.style.backgroundColor = "black";
+					// cbody.style.position = "fixed";
+
+					cmain.style.opacity = "0.5";
+					cmain.style.transition = "all 300ms ease-in-out";
+
+					// cnavbar.style.opacity = "0.5";
+					// cnavbar.style.transition = "all 300ms ease-in-out";
+					
 					exist = true;
 					return 0;
 				}
 				if (exist) {
-					x.style.left = "-1000px";
-					x.style.transition = "all 300ms ease-in-out";
-					z.style.backgroundColor = "#F9FAFC";
-					z.style.transition = "all 300ms ease-in-out";
-					z.style.opacity = "1";
+					csidepanel.style.left = "-1000px";
+					csidepanel.style.transition = "all 300ms ease-in-out";
+
+					cmain.style.backgroundColor = "#F9FAFC";
+					cmain.style.transition = "all 300ms ease-in-out";
+					cmain.style.opacity = "1";
+
+					cnavbar.style.backgroundColor = "#3F51B5";
+					cnavbar.style.transition = "all 300ms ease-in-out";
+					cnavbar.style.opacity = "1";
+					
 					exist = false;
 					return 0;
 				}

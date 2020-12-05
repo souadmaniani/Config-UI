@@ -40,24 +40,27 @@ aside {
             color: $primary-color;
         }
     }
-    .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-      }
+    // .closebtn {
+    //     position: absolute;
+    //     top: 0;
+    //     right: 25px;
+    //     font-size: 36px;
+    //   }
     nav {
         padding-top: 24px;
         a {
-            padding: 0px 0px 37px 24px;
+            padding: 13px 0px 13px 18px;
+            margin-bottom: 24px;
             text-decoration: none;
             &:hover {
                 text-decoration: none;
-                h5 {color: $primary-color-5;} 
-                rect {fill: $primary-color-5;}
+                rect {fill: $secondary-color-1;}
             }
-            &.focus {
-                
+            &:focus:not(.support)  {
+                background-color: $secondary-color-10;
+                border-radius: 4px;
+                box-shadow: inset 3px 0 0 0 $primary-color-5;
+                rect {fill: $secondary-color-1;}
             }
 
         }
@@ -67,10 +70,10 @@ aside {
             color: $primary-color-6;
         }
         .support {
-            padding-top: 137px;
+            margin-top: 137px;
             border-top: 1px solid $primary-color-8;
             h6 {
-                padding-left: 20px;
+                padding: 24px 0 8px 21px;
                 color: rgba(0,0,0,0.33);
             }
         }
