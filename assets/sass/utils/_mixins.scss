@@ -1,7 +1,7 @@
 // Media Query
 @mixin for-size($size) {
 	@if $size == xs-down {
-		@media (max-width: $breakpoint-sm) {
+		@media (max-width: 414px) {
 			@content;
 		}
 	}
@@ -44,6 +44,7 @@
 
 // Button Click Effect
 
+// ripple effect does not works with input class btn !!!!
 
 @mixin ripple-effect {
 	position: relative;

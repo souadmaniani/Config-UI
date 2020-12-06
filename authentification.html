@@ -23,7 +23,7 @@
 	<!-- <link rel="shortcut icon" href="./assets/img/logo/favicon.ico"> -->
 
 </head>
-<!-- I sould add border-bottom below the sign in - I should add verification before submit -->
+<!-- - I should add verification before submit -->
 <body class="container">
 	<section id="authentification">
 		<div class="row">
@@ -37,30 +37,32 @@
 						</a>
 						<h5 class="pl-2">Go back</h5>
 					</div>
-					<h5 class="col-6">Have an account? <a href="#">Sign In</a></h5>
+					<h5 class="col-6">Have an account? <a class="sign-in" href="#">Sign In</a></h5>
 				</div>
 				<div>
 					<h1>Sign up to Config UI</h1>
 					<h5 class="sign-up">Sign up on the  Data Fabric Configuration Manager</h5>
 				</div>
-				<form id="my-form" autocomplete="off" action="http://127.0.0.1:5500/profil.html">
+				<form id="my-form" method="POST" autocomplete="off" action="http://127.0.0.1:5500/dashboard.html" >
 					<div class="floating-placeholder">
-						<input type="text" name="first-name" id="First-name" placeholder="First name">
+						<input type="text" name="first name" id="first name" placeholder="First name">
 						<label for="First-name"></label>
 					</div>
 					<div class="floating-placeholder">
-						<input type="text" name="last-name" id="Last-name" placeholder="Last name">
+						<input type="text" name="last name" id="last name" placeholder="Last name">
 						<label for="Last-name"></label>
 					</div>
 					<div class="floating-placeholder">
-						<input type="text" name="email-address" id="Email-Address" placeholder="Email Address">
+						<input type="email" name="email address" id="email address" placeholder="Email Address">
 						<label for="Email-Address"></label>
 					</div>
 					<div class="floating-placeholder">
-						<input type="text" name="password" id="Password" placeholder="Password">
+						<input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password"
+						pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" name="password" id="password" placeholder="Password" onchange="
+						this.setCustomValidity(this.validity.patternMismatch ? this.title : '');">
 						<label for="Password"></label>
 					</div>
-					<input class="btn" type="submit" value="SIGN UP NOW">
+					<input class="btn" type="submit" id="submit" value="SIGN UP NOW">
 				</form>
 			</div>
 			<div class="col-md-6 col-sm-12 image">

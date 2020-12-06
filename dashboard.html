@@ -939,7 +939,6 @@
 						</tbody>
 					</table>
 				</div>
-
 			</div>
 			<!-- [END] All Pipelines table -->
 			<div class="pep-footer">
@@ -963,62 +962,7 @@
 	<script src="./assets/js/owl.carousel.min.js"></script>
 	<!-- Application -->
 	<script src="./assets/js/main.js"></script>
-	<script>
-			function manageNav() {
-				var csidepanel = document.getElementById("mySidepanel");
-				var cbody = document.getElementById("bodyId");
-				var cmain = document.getElementById ("mainId");
-				var cnavbar = document.getElementById("navId");
-				var exist = false;
 
-				if (window.getComputedStyle(csidepanel).left === "0px") {
-					exist = true;
-				}
-				if (!exist) {
-					csidepanel.style.left = "0px";
-					csidepanel.style.marginTop = "0px";
-					csidepanel.style.transition = "all 300ms ease-in-out";
-					
-					cbody.style.backgroundColor = "black";
-					// cbody.style.position = "fixed";
-
-					cmain.style.opacity = "0.5";
-					cmain.style.transition = "all 300ms ease-in-out";
-
-					// cnavbar.style.opacity = "0.5";
-					// cnavbar.style.transition = "all 300ms ease-in-out";
-					
-					exist = true;
-					return 0;
-				}
-				if (exist) {
-					csidepanel.style.left = "-1000px";
-					csidepanel.style.transition = "all 300ms ease-in-out";
-
-					cmain.style.backgroundColor = "#F9FAFC";
-					cmain.style.transition = "all 300ms ease-in-out";
-					cmain.style.opacity = "1";
-
-					cnavbar.style.backgroundColor = "#3F51B5";
-					cnavbar.style.transition = "all 300ms ease-in-out";
-					cnavbar.style.opacity = "1";
-					
-					exist = false;
-					return 0;
-				}
-			}
-		// function closeNav() {
-		// 	document.getElementById("mySidepanel").style.width = "0";
-		// 	document.getElementById("mySidepanel").style.paddingLeft = "0";
-		// 	document.getElementById("mySidepanel").style.paddingRight = "0";
-		// 	const divIds = $.map($('#mySidepanel > nav'), nav => nav.id);
-		// 	divIds.forEach(element => {
-		// 		document.getElementById(element).style.display = "none";
-		// 	});
-		// 	document.getElementById("profilId").style.display = "none";
-		// 	document.getElementById("mySidepanel").style.transitionDuration = "300ms";
-		// }
-	</script>
 </body>
 
 </html>

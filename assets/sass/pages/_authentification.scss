@@ -21,8 +21,16 @@
 			margin: 30px 0px 50px;
 			padding: 0 30px 0;
 		}
-	}
-
+		span {
+			position: relative;
+			bottom: 15px;
+			left: 15px;
+			font-size: $size;
+			color: rgba (0, 0, 0, 0.6);
+		}
+		.btn {
+			width: 100%;
+		}
 	h1 {
 		margin-top: 16px;
 		color: $primary-color-2;
@@ -38,8 +46,15 @@
 					margin-bottom: 16px;
 				}
 			}
+		}
+		.sign-in {
+			border-bottom: 1px solid $primary-color;
+			&:hover , &:focus {
+				text-decoration:none;
+				border-bottom: 1px solid $secondary-color-1;
+			}
+		}
 	}
-
 	.image {
 		position: relative;
 		@include for-size(md-down) {

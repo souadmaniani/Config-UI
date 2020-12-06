@@ -60,7 +60,8 @@ h4 {
 	font-size: $size-1;
 	line-height: 1.25;
   	letter-spacing: -0.05px;
-	@include for-size(lg-down) {
+	@include for-size(sm-down) {
+		font-size: $size-0;
 	}
 }
 h5, a {

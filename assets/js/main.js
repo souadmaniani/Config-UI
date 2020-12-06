@@ -1,3 +1,54 @@
+function manageNav() {
+	var csidepanel = document.getElementById("mySidepanel");
+	var cbody = document.getElementById("bodyId");
+	var cmain = document.getElementById ("mainId");
+	var cnavbar = document.getElementById("navId");
+	var exist = false;
+
+	if (window.getComputedStyle(csidepanel).left === "0px") {
+		exist = true;
+	}
+	if (!exist) {
+		csidepanel.style.left = "0px";
+		csidepanel.style.marginTop = "0px";
+		csidepanel.style.transition = "all 300ms ease-in-out";
+		
+		cbody.style.backgroundColor = "black";
+		// cbody.style.position = "fixed";
+
+		cmain.style.opacity = "0.5";
+		cmain.style.transition = "all 300ms ease-in-out";
+
+		// cnavbar.style.opacity = "0.5";
+		// cnavbar.style.transition = "all 300ms ease-in-out";
+		
+		exist = true;
+		return 0;
+	}
+	if (exist) {
+		csidepanel.style.left = "-1000px";
+		csidepanel.style.transition = "all 300ms ease-in-out";
+
+		cmain.style.backgroundColor = "#F9FAFC";
+		cmain.style.transition = "all 300ms ease-in-out";
+		cmain.style.opacity = "1";
+
+		cnavbar.style.backgroundColor = "#3F51B5";
+		cnavbar.style.transition = "all 300ms ease-in-out";
+		cnavbar.style.opacity = "1";
+		
+		exist = false;
+		return 0;
+	}
+}
+// THERE IS HTML5 Form Validation
+// function checkForm(form)
+// {
+	// var $form = $("#my-form"),
+    // $errorMsg = $("<span class='error'>This field is required..!!</span>");
+
+// }
+
 $(() => {
 	// ====== [BEGIN] floating-placeholder ======
     function initTricks() {
@@ -19,7 +70,35 @@ $(() => {
         e.preventDefault();
 	});
 	
-    initTricks();
+	initTricks();
+
+	var $form = $("#my-form");
+    
+	$("#submit").on("click", function () {
+		
+		// If any field is blank, we don't submit the form
+		var toReturn = true;
+		$("input", $form).each(function () {
+			// If our field is blank
+			if ($(this).val() == "") {
+				// Add an error message
+				if (!$(this).data("error")) {
+					var $errorMsg = $("<span class='error'>Please specify the " + this.id + "</span>");
+					$(this).data("error", $errorMsg.clone().insertAfter($(this)));
+				}
+				toReturn = false;
+			}
+			// If the field is not blank
+			else {
+				// Remove the error message 
+				if ($(this).data("error")) {
+					$(this).data("error").remove();
+					$(this).removeData("error");
+				}
+			}
+		});
+		return toReturn;
+	});
    // ====== [END] floating-placeholder ======
 		// function openNav() {
 		// 	document.getElementById("mySidepanel").style.width = "300px";

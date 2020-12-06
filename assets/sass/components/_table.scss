@@ -1,12 +1,20 @@
 .all-peplines {
     position: relative;
-    margin-top: 22px;
+    margin-top: 24px;
     width: 75%;
     @include bg-card (16px, 27px, 22px, 24px);
     @include for-size (xxl-down) {
         width: 100%;
     }
-    table {thead{th{border-bottom: none;border-top: none;}}} 
+    @include for-size (xs-down) {
+        @include bg-card (16px, 0px, 22px, 0px);
+        overflow: hidden;
+    }
+    table {
+        @include for-size (xs-down) {
+            th {padding: 12px 6px 12px;}
+        }
+        thead{th{border-bottom: none;border-top: none;}}} 
     .header-table {
         @include flex (space-between, center);
         margin-bottom: 34px;
